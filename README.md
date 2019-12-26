@@ -1,6 +1,11 @@
-# talks
-This repo is used to keep a track of the Talks of PyJaipur 
+# Talks/Meetups/Discussions
 
-To give a talk on any topic , just create a new issue in this repo and you will be notified (the date when you can give a talk and venue and timing) accordingly . (for ADMIN, whenever a talk is delivered just close the issue )
+This repo is used to:
+- Discuss when to organize meetups.
+- Maintain todo lists for the tasks to be done for meetups.
+- Accept talk proposals/improve them in discussion with the authors.
+- Archive discussions for future reference.
 
-This repo helps in maintaining talks and pdfs or slide that are used in talks , so that later on it can be accessible too .  
+## If you want to
+
+1. [Submit a proposal for a talk]()
