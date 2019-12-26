@@ -8,4 +8,4 @@ This repo is used to:
 
 ## If you want to
 
-1. [Submit a proposal for a talk]()
+1. [Submit a proposal for a talk](https://github.com/PyJaipur/Talks/issues/new)
