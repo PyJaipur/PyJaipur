@@ -11,5 +11,9 @@ This repo is used to:
 ## If you want to
 
 - [Submit a proposal for a talk](https://github.com/PyJaipur/Talks/issues/new)
-- [See the talks proposed for the next meetup](https://github.com/PyJaipur/PyJaipur/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aupcoming+label%3Atalks+sort%3Areactions-%2B1-desc)
-    - These talks are ordered by :+1: votes on the issue. If you like a talk, please make sure you go and vote for it.
+
+
+## Ranked issues
+- These issues are ordered by :+1: votes on the issue. To express support please make sure you go and vote for it using the :+1: reaction. (Other reactions are not counted)
+- [Talks proposed for the next meetup](https://github.com/PyJaipur/PyJaipur/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aupcoming+label%3Atalks+sort%3Areactions-%2B1-desc)
+- [Dates proposed for the next meetup](https://github.com/PyJaipur/PyJaipur/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aupcoming+label%3Ameetup+sort%3Areactions-%2B1-desc)
