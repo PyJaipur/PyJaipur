@@ -15,3 +15,6 @@ This repo is used to:
 ## Ranked issues
 - These issues are ordered by :+1: votes on the issue. To express support please make sure you go and vote for it using the :+1: reaction. (Other reactions are not counted)
 - [Talks proposed for the next meetup, most :+1: first](https://github.com/PyJaipur/PyJaipur/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aupcoming+label%3Atalks+sort%3Areactions-%2B1-desc)
+
+
+Photos and videos can be found under the event dates on [this google drive folder](https://drive.google.com/drive/folders/1cuZ9h7VYSXlJUYMALhBK62STvgoXMLn3?usp=sharing)
