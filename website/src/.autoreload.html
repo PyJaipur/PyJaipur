@@ -1,0 +1,17 @@
+<script>
+  setInterval(function (){
+    var current_hash = "{{ sitehash }}";
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        if(current_hash !== this.responseText) {
+          console.log(current_hash, 'old');
+          console.log(this.responseText, 'new');
+          location.reload();
+        }
+      }
+    };
+    xhttp.open("GET", "/{{ site_hash_path }}", true);
+    xhttp.send();
+  }, {{ check_interval }});
+</script>

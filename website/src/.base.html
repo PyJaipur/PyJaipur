@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Official site for the python user community of Jaipur, Rajasthan, India">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PyJaipur</title>
+    <link rel="icon" type="image/gif/png" href="{{ baseurl }}/images/logo.png">
+    <style>{% include 'css/.base.css' %}</style>
+    {% block head %}
+    {% endblock %}
+  </head>
+
+<body>
+  <div class="topnav">
+    <a href="{{ baseurl }}/">PyJaipur</a>
+    <a href="{{ baseurl }}/archives.html">Archives</a>
+    {% include '.external_links.html' %}
+  </div>
+  <div class='content'>
+  {% block content %}{% endblock %}
+  </div>
+  {% if autoreload %}
+    {% include '.autoreload.html' %}
+  {% endif %}
+  {% if autoreload %}<input type='hidden' value="{{ sitehash }}">{% endif %}
+</body>
+</html>

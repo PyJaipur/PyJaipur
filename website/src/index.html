@@ -1,0 +1,30 @@
+{% extends '.base.html' %}
+{% block head %}
+<style>
+.center{
+  text-align: center;
+}
+</style>
+{% endblock %}
+{% block content %}
+
+<div class='center'>
+  <h1><img src='{{ baseurl }}/images/logo-white.png'></h1>
+  <p>
+  PyJaipur is a non-profit local python user group/community based in <a href='https://goo.gl/maps/eZEFGimUg7Hg7kMT6' target='_blank'>Jaipur, Rajasthan</a>.
+  </p>
+
+  <p>
+  We aim to promote Python and FOSS (Free and Open Source Software) in Jaipur and
+  nearby regions. Whether you are a student, teacher, developer, entrepreneur, or
+  any simply someone who wants to learn something new we would always have a
+  place for you in our meetups.
+  </p>
+  <p>
+  Come attend our next <a href='https://www.meetup.com/PyJaipur/events/xcthnrybcdbdc/'>Monthly Meetup on 22 Feb 2020</a>!
+  <hr>
+  {% include '.external_links.html' %}
+  </p>
+
+</div>
+{% endblock %}
