@@ -1,0 +1,37 @@
+{% extends '.base.html' %}
+{% block head %}
+<style>
+.tag{
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+span[class='tag']{
+  background-color: orange;
+}
+a[class='tag']{
+  background-color: default;
+  text-decoration: none;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>Internships</h1>
+<p>The following are internship opportunities posted by various companies
+either in our Telegram group, meetup page, or elsewhere.</p>
+{% for internship in internships %}
+  <hr>
+  <div>
+    <h2>{{ internship.title }}</h2>
+    <div class='taglist'>
+      <a href='{{ internship.maps_link }}' class='tag'>Google maps location</a>
+      {% for tag in internship.tags %}
+        <span class='tag'>{{ tag}}</span>
+      {% endfor %}
+    </div>
+    <p>{{ internship.description }}</p>
+  </div>
+{% endfor %}
+{% endblock %}

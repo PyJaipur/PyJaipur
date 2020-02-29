@@ -1,1 +1,19 @@
 baseurl: ''
+internships:
+  - title: "Junior Developer"
+    tags:
+      - "1k/month"
+      - "OnSite"
+      - "upgradeToJob"
+      - "1month"
+    maps_link: 'https://g.page/Smaac?share'
+    description: "We're looking for someone to help us out with VB .NET feature building."
+    last_date: '2020-03-10'
+  - title: "DevOps Engineer"
+    tags:
+      - "10k/month"
+      - "Remote"
+      - "3month"
+    maps_link: 'https://g.page/Smaac?share'
+    description: "We need someone to help us manage our gitlab automation system. This includes pipelines and our gitlab bot."
+    last_date: '2020-03-10'
