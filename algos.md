@@ -4,4 +4,8 @@
   * Will be discussed by: [Shivank Gautam](https://github.com/shivank98)
   * Meeting place and timming:  https://meet.google.com/gqw-pdxo-cxo   10:00 Sharp PM IST
 
+### Day - 2: 7th April
+ * [Problem 3](https://www.hackerrank.com/challenges/pairs/problem)
+ * Will be discussed by: [Shivank Gautam](https://github.com/shivank98)
+ * Meeting place and timming:  https://meet.google.com/gqw-pdxo-cxo   10:00 Sharp PM IST
   
