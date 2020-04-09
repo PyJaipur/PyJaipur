@@ -1,11 +1,22 @@
 # Proposal
 
-- We rename the event
-- We keep the event completely open.
+## Infrastructure
+
+- A separate repo is created to manage the event code and discussions.
+- All discussions for the event are handled by github issues.
+- Telegram/whatsapp can be used for small group discussions involving 2-3 people.
+- We build the soa site with something like react/vue/jinja and deploy using netlify.
+- The API server is built using python and hosted on heroku/free aws.
+- Both codebases reside in the same repo for ease of versioning and hot updates during the event.
+
+## Participant flow
+
+- We rename the event to something else.
+- We keep the event completely open, no fees and no limitations.
 - Each participant is in one of three phases at any given time.
 - Every time a participant finishes a phase, they are moved to the next phase.
 
-## Phase 1 participants
+### Phase 1 participants
 
 - We set up a simple to follow tutorial for python/any other language we can support.
 - This needs to be a 10 page setup MAX
@@ -15,7 +26,7 @@
 - Each concept / section has 2 questions as test. Once all tests are done the participant has cleared the phase.
 - We can now give them links to python docs, practice sites etc. to read in their free time.
 
-##  Phase 2 participants
+###  Phase 2 participants
 
 - We shift them from repl.it to hackerrank/leetcode/hackerearth easy questions
 - We provide them a few questions as practice along with tutorials for that.
@@ -23,7 +34,7 @@
 - In order to achieve that target participants are encouraged to ask questions in a group setting.
 - We use github issues to manage these discussions. This preps them to use github for the next phase.
 
-## Phase 3 participants
+### Phase 3 participants
 
 - We pick out 2-3 foss projects and mentor them into contributing to it.
 - People get assigned foss projects.
