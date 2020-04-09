@@ -28,3 +28,4 @@
 - We pick out 2-3 foss projects and mentor them into contributing to it.
 - People get assigned foss projects.
 - The group discussion philosophy is maintained, except this time there is at least one mentor present in the group.
+- Our target is to make everyone who reaches here submit at least one PR in a FOSS project.
