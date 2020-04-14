@@ -11,17 +11,14 @@ Upcoming events and calls
   
 Events in last month
   Topic: Call on Binary Search
-  Date and time: 7 April
   Speakers: Shivank Gautam
   Location: Online
   
   Topic:   Decorators and Generators
-  Date and time: 5 April
   Speakers: Arjoonn Sharma
   Location: Online
   
   Topic:   Monthly Meetup March - Web Scraping and Docker
-  Date and time: 28 March
   Speakers: Arjoonn Sharma
   Location: Online
   
