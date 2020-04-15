@@ -1,0 +1,81 @@
+<div class='alertstream'>
+  <h2>Events</h2>
+  <noscript>To see upcoming events please turn on javascript.</noscript>
+  <!-- Place each event on in it's own div -->
+  
+  <div class='alert'>
+    <strong>Weekend call</strong><br>
+    <time>18 Apr 2020 17:00:00 GMT+5:30</time>
+    <a href='#'>Online call</a>
+    <a href='#'>Youtube</a>
+    <a href='#'>Github</a>
+    <a href='#'>Meetup.com</a><br>
+    <hr>
+    <p>Talking about vim and terminal usage.</p>
+  </div>
+
+  <div class='alert'>
+    <strong>April meetup</strong><br>
+    <time>25 Apr 2020 10:00:00 GMT+5:30</time>
+    <a href='#'>Online call</a>
+    <a href='#'>Youtube</a>
+    <a href='#'>Github</a>
+    <a href='#'>Meetup.com</a><br>
+    <hr>
+    <p>TBD</p>
+  </div>
+
+</div>
+<!-- Place your events above this code please.  This script removes old events
+  in the browser so that we don't have to manually clean them up everyday -->
+<script>
+  function cleanup_alerts(){
+    var alerts = document.querySelectorAll('.alert');
+    var now = Date.now()
+    var hours = 60 * 60 * 1000;
+    for (var i = 0; i < alerts.length; ++i){
+      var t = alerts[i].querySelector('time');
+      var t = Date.parse(t.textContent);
+      if ( (now > t) && ((now - t) < 1 * hours)){
+          alerts[i].classList.add('live')
+      }
+      if ((now - t) > 3 * hours){
+        alerts[i].remove();
+      }
+    }
+  }
+  cleanup_alerts()
+</script>
+<style>
+.alert {
+  background-color: 'lightgreen';
+  padding:5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-bottom:5px;
+  margin-top: 10px;
+}
+.alert a{
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .alertstream {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    width: 350px;
+    background-color: #eee;
+    padding: 10px;
+    padding-top:0px;
+  }
+}
+.live {
+  background-color: lightgreen;
+}
+</style>
