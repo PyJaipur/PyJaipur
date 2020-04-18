@@ -1,5 +1,6 @@
 <div class='alertstream'>
   <h2>Events</h2>
+  <a href='/?AllEvents=yes'>Show hidden events</a>
   <noscript>To see upcoming events please turn on javascript.</noscript>
   <!-- Place each event on in it's own div -->
   <div class='alert'>
@@ -35,6 +36,8 @@
   in the browser so that we don't have to manually clean them up everyday -->
 <script>
   function cleanup_alerts(){
+    if (window.location.href.indexOf('AllEvents') > -1){
+      return}
     var alerts = document.querySelectorAll('.alert');
     var now = Date.now()
     var hours = 60 * 60 * 1000;
