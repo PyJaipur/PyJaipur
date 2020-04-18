@@ -1,0 +1,42 @@
+Subject: PyJaipur Monthly Letter | March Month
+
+Hey Everyone, 
+This is our monthly newslater. where we provide you details of things that we did in last meetup. you can also find some internship and job posting here. 
+
+Upcoming events and calls
+  Topic:  Terminals + Vim
+  Date and time: Sunday 19 April
+  Speakers: Arjoonn Sharma
+  Location: Online( LINK would be updated [here](https://github.com/PyJaipur/PyJaipur/issues/33) please follow/subscribe [this](https://github.com/PyJaipur/PyJaipur/issues/33) issue)
+  
+Events in last month
+  Topic: Call on Binary Search
+  Speakers: Shivank Gautam
+  Location: Online
+  
+  Topic:   Decorators and Generators
+  Speakers: Arjoonn Sharma
+  Location: Online
+  
+  Topic:   Monthly Meetup March - Web Scraping and Docker
+  Speakers: Arjoonn Sharma
+  Location: Online
+  
+Jobs and internships.
+  if you are looking for some jobs and internship oppertunities.
+  Please apply the companies mentioned [here](https://www.pyjaipur.org/jobs_and_internships.html)
+  
+Some issues that might intrest you.
+Here is a list of issues you can go throgh them and let us know in comments if you would like to work on something.
+https://github.com/PyJaipur/PyJaipur/issues
+
+  
+Blogs to read:
+  some suggested blogs to read.
+  
+
+We love the discussion which invloves coding. You can say Hi to team at following Telegram group.
+Link to TG Group (Please install TG first on your phones. If link is unable to open search @PyJaipur in search box.)
+  
+
+
