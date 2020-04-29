@@ -23,3 +23,6 @@ Changes to this repo are done as follows:
 - [Make changes to pyjaipur.org](https://github.com/PyJaipur/PyJaipur/blob/master/website/README.md)
 - [See talk rankings, most :+1: first](https://github.com/PyJaipur/PyJaipur/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aupcoming+label%3Atalks+sort%3Areactions-%2B1-desc)
 - Photos and videos can be found under the event dates on [this google drive folder](https://drive.google.com/drive/folders/1cuZ9h7VYSXlJUYMALhBK62STvgoXMLn3?usp=sharing)
+- Add an event:
+    - Add your event to [the events.html file](https://github.com/PyJaipur/PyJaipur/blob/master/website/src/.events.html)
+    - Make sure to add a calendar link + call/github link
