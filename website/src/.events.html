@@ -70,6 +70,16 @@
       var t = Date.parse(t.textContent);
       if ( (now > t) && ((now - t) < 1 * hours)){
           alerts[i].classList.add('live')
+          // If the url contains #call, redirect to the live call
+          if(window.location.href.indexOf('#call') > -1){
+            var links=alerts[i].getElementsByTagName('a');
+            for (var k=0; k< links.length; ++k){
+              var href = links[k].getAttribute('href');
+              if (href.indexOf('meet.jit.si') > -1){
+                window.location.href = href;
+              }
+            }
+          }
       }
       if ((now - t) > 1 * hours){
         alerts[i].remove();
