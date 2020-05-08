@@ -1,8 +1,23 @@
 <div class='alertstream'>
   <h2>Events</h2>
-  <a href='/?AllEvents=yes'>Show hidden events</a>
+  <a href='/?AllEvents=yes'>Show past events</a>
   <noscript>To see upcoming events please turn on javascript.</noscript>
   <!-- Place each event on in it's own div -->
+
+  <div class='alert'>
+    <strong>May meetup</strong><br>
+    <time>23 May 2020 10:00:00 GMT+5:30</time>
+    <a class='badge' target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NmRodHRyc3F1OWYyZWRncmRrc3MzMWpzaDYgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com">Add to calendar</a><br>
+    <a class='badge' href='https://meet.google.com/jyd-gbuj-vhy'>Call</a>
+    <a class='badge' href='https://www.meetup.com/PyJaipur/events/270530002/'>Meetup.com</a>
+    <hr>
+    <ol>
+      <li><a href='https://github.com/PyJaipur/PyJaipur/issues/52'>SOLID principles</a></li>
+      <li><a href='https://github.com/PyJaipur/PyJaipur/issues/53'>React JS & React native</a></li>
+      <li><a href='https://github.com/PyJaipur/PyJaipur/issues/55'>Crypto & web security</a></li>
+    </ol>
+  </div>
+
 
   <div class='alert'>
     <strong>May meetup - Dev Sprints</strong><br>
@@ -75,7 +90,7 @@
             var links=alerts[i].getElementsByTagName('a');
             for (var k=0; k< links.length; ++k){
               var href = links[k].getAttribute('href');
-              if (href.indexOf('meet.jit.si') > -1){
+              if ((href.indexOf('meet.jit.si') > -1) || (href.indexOf('meet.google.com') > -1)){
                 window.location.href = href;
               }
             }
@@ -97,7 +112,7 @@
   padding-bottom:5px;
   margin-top: 10px;
 }
-.alert a{
+.alert .badge{
   text-decoration: none;
   border: 1px solid black;
   color: black;
