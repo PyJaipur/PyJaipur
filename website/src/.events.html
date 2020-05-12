@@ -67,8 +67,8 @@
     <p>Talking about vim and terminal usage.</p>
   </div>
 
-
-<a href='/?AllEvents=yes'>Show past events</a>
+<br>
+<a href='/?AllEvents=yes'>Show all past events</a>
 </div>
 <!-- Place your events above this code please.  This script removes old events
   in the browser so that we don't have to manually clean them up everyday -->
@@ -103,14 +103,6 @@
   cleanup_alerts()
 </script>
 <style>
-.alert {
-  background-color: 'lightgreen';
-  padding:5px;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding-bottom:5px;
-  margin-top: 10px;
-}
 .alert .badge{
   text-decoration: none;
   border: 1px solid black;
@@ -120,13 +112,31 @@
   padding-right: 5px;
   border-radius: 5px;
 }
+.alert {
+  padding:5px;
+  border-radius: 5px;
+  padding-bottom:5px;
+  margin-top: 10px;
+  border: 1px solid black;
+}
 @media only screen and (min-width: 768px) {
+  .alert {
+    padding:5px;
+    border-radius: 0px 5px 5px 0px;
+    padding-bottom:5px;
+    margin-top: 10px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 0px;
+  }
   .alertstream {
+    border-left: 1px solid black;
     position: absolute;
     top: 10%;
     left: 80%;
     width: 350px;
-    background-color: #eee;
+    background-color: var(--bg);
     padding: 10px;
     padding-top:0px;
   }
