@@ -27,3 +27,6 @@ Changes to this repo are done as follows:
     - Add your event to [the events.html file](https://github.com/PyJaipur/PyJaipur/blob/master/website/src/.events.html)
     - Open a PR by replacing `theSage21` with your own github name in the following url: <https://github.com/PyJaipur/PyJaipur/compare/master...theSage21:master?template=new_event.md>
     - Fill out the details needed for a new event.
+- Ask some questions regarding my code:
+    - Add your code to the scratch folder.
+    - Open a pull request
