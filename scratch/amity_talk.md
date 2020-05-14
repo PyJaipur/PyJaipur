@@ -1,4 +1,4 @@
-# CS grad. हाँ तोह क्या?
+# What does CS mean?
 
 ## Intro
 
@@ -6,7 +6,7 @@
     - Taking a look at [gulfnews][1], [Economic times][2] news articles it looks like my CS education was worthless.
 2. Why is that?
 3. What makes you employable in CS?
-
+4. What is CS?
 
 ## Outline
 ## Slides
