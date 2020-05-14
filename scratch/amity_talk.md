@@ -15,5 +15,5 @@
 
 ## References
 
-- https://gulfnews.com/world/asia/india/is-india-producing-unemployable-engineers-1.2231442
-- https://economictimes.indiatimes.com/jobs/only-6-of-those-passing-out-of-indias-engineering-colleges-are-fit-for-a-job/articleshow/64446292.cms
+[1]: https://gulfnews.com/world/asia/india/is-india-producing-unemployable-engineers-1.2231442
+[2]: https://economictimes.indiatimes.com/jobs/only-6-of-those-passing-out-of-indias-engineering-colleges-are-fit-for-a-job/articleshow/64446292.cms
