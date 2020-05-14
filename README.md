@@ -25,4 +25,5 @@ Changes to this repo are done as follows:
 - Photos and videos can be found under the event dates on [this google drive folder](https://drive.google.com/drive/folders/1cuZ9h7VYSXlJUYMALhBK62STvgoXMLn3?usp=sharing)
 - Add an event:
     - Add your event to [the events.html file](https://github.com/PyJaipur/PyJaipur/blob/master/website/src/.events.html)
-    - Make sure to add a calendar link + call/github link
+    - Open a PR by replacing `theSage21` with your own github name in the following url: <https://github.com/PyJaipur/PyJaipur/compare/master...theSage21:master?template=new_event.md>
+    - Fill out the details needed for a new event.
