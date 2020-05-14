@@ -2,7 +2,13 @@
   <h2>Events</h2>
   <a href='https://github.com/PyJaipur/PyJaipur/edit/master/website/src/.events.html#L5'>Add a new event</a>
   <noscript>To see only upcoming events please turn on javascript.</noscript>
-  <!-- Place each event on in it's own div -->
+
+  <!--
+    Place each event in it's own div.
+    Events will be sorted by their time tag.
+    Events in the past will be removed.
+    pyjaipur.org#call will redirect to any live event's call link if it is jitsi or meet.google.com
+  -->
 
   <div class='alert'>
     <strong>PyCloud mini-conference</strong><br>
@@ -115,6 +121,23 @@
       }
     }
   }
+  function order_alerts(){
+    var alerts = document.querySelectorAll('.alert');
+    var final_order = [];
+    for (var i = 0; i < alerts.length; ++i){
+      var t = alerts[i].querySelector('time');
+      var t = Date.parse(t.textContent);
+      final_order.push({node: alerts[i].cloneNode(true), start_time: t});
+      alerts[i].parentNode.removeChild(alerts[i]);
+    }
+    final_order.sort(function (a, b) { return b.start_time - a.start_time})
+    var new_event_link = document.querySelector('.alertstream a');
+    for (var i = 0; i < alerts.length; ++i){
+      new_event_link.insertAdjacentElement('afterend', final_order[i].node);
+    }
+    console.log(final_order)
+  }
+  order_alerts()
   cleanup_alerts()
 </script>
 <style>
