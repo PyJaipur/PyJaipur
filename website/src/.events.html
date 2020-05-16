@@ -114,13 +114,17 @@
     var alerts = document.querySelectorAll('.alert');
     var now = Date.now()
     var hours = 60 * 60 * 1000;
+    var redirect_to_call = false;
+    if (window.location.href.indexOf('#call') > -1){
+      redirect_to_call = true;
+    }
     for (var i = 0; i < alerts.length; ++i){
       var t = alerts[i].querySelector('time');
       var t = Date.parse(t.textContent);
       if ( (now > t) && ((now - t) < 1 * hours)){
           alerts[i].classList.add('live')
           // If the url contains #call, redirect to the live call
-          if(window.location.href.indexOf('#call') > -1){
+          if(redirect_to_call === true){
             var links=alerts[i].getElementsByTagName('a');
             for (var k=0; k< links.length; ++k){
               var href = links[k].getAttribute('href');
@@ -134,6 +138,9 @@
         alerts[i].remove();
       }
     }
+  if (redirect_to_call === true ){
+    alert("There is no live call available. Please check the event schedule.")
+  }
   }
   function order_alerts(){
     var alerts = document.querySelectorAll('.alert');
