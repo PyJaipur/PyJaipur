@@ -115,6 +115,7 @@
     var now = Date.now()
     var hours = 60 * 60 * 1000;
     var redirect_to_call = false;
+    var found_live_call = false;
     if (window.location.href.indexOf('#call') > -1){
       redirect_to_call = true;
     }
@@ -129,6 +130,7 @@
             for (var k=0; k< links.length; ++k){
               var href = links[k].getAttribute('href');
               if ((href.indexOf('meet.jit.si') > -1) || (href.indexOf('meet.google.com') > -1)){
+                found_live_call = true;
                 window.location.href = href;
               }
             }
@@ -138,9 +140,9 @@
         alerts[i].remove();
       }
     }
-  if (redirect_to_call === true ){
-    alert("There is no live call available. Please check the event schedule.")
-  }
+  if (redirect_to_call === true && found_live_call === false){
+      alert("There is no live call available. Please check the event schedule.")
+    }
   }
   function order_alerts(){
     var alerts = document.querySelectorAll('.alert');
