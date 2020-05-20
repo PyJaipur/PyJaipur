@@ -13,8 +13,11 @@
   </head>
 
 <body>
-  <div class='content'>
+  <div class='content grid-mid'>
   {% block content %}{% endblock %}
+  </div>
+  <div class='grid-right'>
+  {% include '.events.html' %}
   </div>
   {% if autoreload %}
     {% include '.autoreload.html' %}
