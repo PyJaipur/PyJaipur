@@ -3,6 +3,8 @@
 Please put your event announcement message below so that volunteers can use it to broadcast on the platforms pyjaipur is active on:
 
 ```
+
+#pyjaipur #event
 ```
 
 Event card items checklist:
@@ -21,5 +23,8 @@ Event announcement checklist:
 - [ ] linkedin
 - [ ] twitter
 - [ ] telegram
+    - [ ] pyjaipur
+    - [ ] ilugd
 - [ ] mailing list
-
+    - [ ] pyj
+    - [ ] ilugd
