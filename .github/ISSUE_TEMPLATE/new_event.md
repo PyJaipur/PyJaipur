@@ -1,40 +1,37 @@
 # Event title
 
-Please put your event announcement message below so that volunteers can use it to broadcast on the platforms pyjaipur is active on:
+## Announcement message
 
-```
+    Use pyjaipur.org/#call to join the event
+    #pyjaipur #event
 
-Use pyjaipur.org/#call to join the event
-#pyjaipur #event
-```
+## Announcement poster
 
-Event card items checklist:
+## Checklist
 
-- [ ] Date and time of starting
-- [ ] Short description
-- [ ] Meetup link
-- [ ] Google calendar link
-- [ ] meet.google or meet.jit.si link
-- [ ] Github link if applicable
-
-
-- [ ] Make event poster
-- [ ] pyjaipur google calendar event entry
-    - [ ] Add event details here
-    - [ ] Create a meeting link
-- [ ] Update relevant github issues.
-- [ ] Add event card to pyjaipur.org with calendar and call entry.
+- [ ] Add announcement message on this issue
+- [ ] Google calendar event on pyj calendar
+    - [ ] Add announce message
+    - [ ] Create a meeting link using meet.google or jitsi
+- [ ] pyjaipur.org
+    - [ ] Date and time of starting
+    - [ ] Short description
+    - [ ] Google calendar link
+    - [ ] Call link from calendar
+    - [ ] Github link if applicable
+- [ ] Make event poster.
+- [ ] Update relevant talk/management issues.
 - [ ] meetup
     - [ ] Create draft for event
     - [ ] Add poster
-    - [ ] Add details here
+    - [ ] Add announce message
     - [ ] Publish and announce
 - [ ] linkedin
     - [ ] Create event
-    - [ ] Use poster
-    - [ ] Add details
+    - [ ] Add poster
+    - [ ] Add announce message
 - [ ] twitter
-    - [ ] Event poster
+    - [ ] Add poster
     - [ ] Quick details
     - [ ] Link to calendar event
     - [ ] Link to call
@@ -46,8 +43,8 @@ Event card items checklist:
         - [ ] pyjaipur
         - [ ] ilugd
 - [ ] mailing list
-    - [ ] Event poster 
-    - [ ] Add details here
+    - [ ] Add poster
+    - [ ] Add announce message
     - [ ] Link to calendar event
     - [ ] Announce on:
         - [ ] pyj
