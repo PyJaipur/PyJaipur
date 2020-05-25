@@ -1,4 +1,11 @@
-# Event title
+---
+name: Event
+about: Propose a new event
+title: ''
+labels: 'event'
+assignees: ''
+
+---
 
 ## Announcement message
 
