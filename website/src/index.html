@@ -9,7 +9,10 @@
 {% endblock %}
 {% block content %}
 <div class='center'>
-  <h1><img src='{{ baseurl }}/images/logo-white.png'></h1>
+  <h1>
+    {% include 'images/.pyj.svg' %}
+    PyJaipur
+  </h1>
   {% include '.platforms.html' %}
   <p>
   PyJaipur is a non-profit local python user group/community in <a href='https://goo.gl/maps/eZEFGimUg7Hg7kMT6' target='_blank'>Jaipur, Rajasthan</a>.
