@@ -49,3 +49,7 @@
     - [ ] Announce on:
         - [ ] pyj
         - [ ] ilugd
+- [ ] youtube
+    - [ ] Create a live stream event
+    - [ ] Add poster
+    - [ ] Add announce message
