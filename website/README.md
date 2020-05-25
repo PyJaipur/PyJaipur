@@ -6,8 +6,10 @@
 - All files which don't start with `.` are rendered.
 
 # How to run website on local.
- - you need to install staticsite `pip install staticsite`.
-- from this folder build site using  `python -m staticsite build`. in local you will also have to set baseurl in staticsite.yaml equals to '/docs'.
-- run `python -m http.server` to run it. 
+
+- You need to install staticsite `python -m pip install staticsite`.
+- From this folder build site using  `python -m staticsite build`.
+- Run `(cd www && python -m http.server)` to run a local server. 
+- Visit http://localhost:8000 to see your local copy of the website.
 
 Please make changes in your own fork and submit a PR.
