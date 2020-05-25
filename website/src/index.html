@@ -9,26 +9,34 @@
 {% endblock %}
 {% block content %}
 <div class='center'>
-  <h1><img src='{{ baseurl }}/images/logo-white.png'></h1>
+  <h1>
+    {% include 'images/.pyj.svg' %}
+    PyJaipur
+  </h1>
+  {% include '.platforms.html' %}
   <p>
   PyJaipur is a non-profit local python user group/community in <a href='https://goo.gl/maps/eZEFGimUg7Hg7kMT6' target='_blank'>Jaipur, Rajasthan</a>.
+  We follow this <a href='https://www.python.org/psf/conduct/'>Code of Conduct</a> at all times.
   </p>
   <p>
   Come attend a meetup!
   </p>
-  <hr>
-  <h2 class='left'>Who? What? Where?</h2>
+  <h2 class='left'>To join or volunteer</h2>
   <p>
   <ul class='left'>
-    <li><b><a href='https://www.python.org/psf/conduct/'>Code of Conduct</a></b> needs to be followed at all times.</li>
-    <li><b><a href='https://github.com/PyJaipur/PyJaipur/'>Github.com/pyjaipur/pyjaipur</a></b> is used to manage site/talks/meetups.</li>
-    <li> <b> <a href='https://www.meetup.com/PyJaipur/'>Meetup.com/PyJaipur</a> </b> is used to announce events.  </li>
-    <li> <b> <a href='https://t.me/pyjaipur'>@PyJaipur</a> </b> is where we chat on telegram.</li>
-    <li> <b> <a href='https://t.me/joinchat/Egpy4xLU947zVMila__jnw'>@Pyjaipur-links</a> </b> is used for promotional links.</li>
-    <li> <b> <a href='https://medium.com/pyjaipur-publications'>PyJaipur publications</a> </b> has community articles on medium.com</li>
+    <li> You can <a href='https://github.com/PyJaipur/PyJaipur/issues/new?template=new_talk.md'>propose new talks</a>.</li>
+    <li> Help us with <a href='https://github.com/PyJaipur/PyJaipur/projects/2'>our volunteer tasks</a>.</li>
+    <li> Join our telegram group <a href='https://t.me/PyJaipur'>@PyJaipur</a> and keep the conversation lively!</li>
   </ul>
   </p>
-  <hr>
+  <h2 class='left'>To follow activities</h2>
+  <p>
+  <ul class='left'>
+    <li>Watch or star our <a href='https://github.com/PyJaipur/PyJaipur/'>github repo</a> to see activities.</li>
+    <li>Join our telegram group  <a href='https://t.me/pyjaipur'>@PyJaipur</a>  to see what people are talking about.</li>
+    <li> Join <a href='https://t.me/joinchat/Egpy4xLU947zVMila__jnw'>@Pyjaipur-links</a> on telegram to see promotional links.  </li>
+    <li> Follow us on any of our social platforms to receive anouncements.</li>
+  </ul>
   <h2 class='left'>Threads</h2>
   <ul class='left'>
     <li> <a href="https://github.com/PyJaipur/PyJaipur/issues/26">Jobs/Internships</a> </li>

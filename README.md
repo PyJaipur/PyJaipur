@@ -3,30 +3,61 @@
 Please follow the [Code of Conduct](https://www.python.org/psf/conduct/) at all times.
 
 This repo is used to:
-- Discuss when to organize meetups.
-- Maintain todo lists for the tasks to be done for meetups.
-- Accept talk proposals/improve them in discussion with the authors.
-- Archive discussions for future reference.
+- Organize talk schedules using [the talk project](https://github.com/PyJaipur/PyJaipur/projects/1).
+- Organize volunteer tasks using [the volunteer tasks project](https://github.com/PyJaipur/PyJaipur/projects/2).
+- Have code based discussions in [the scratch folder](https://github.com/PyJaipur/PyJaipur/tree/master/scratch).
+- Manage the pyjaipur.org website [source code](https://github.com/PyJaipur/PyJaipur/tree/master/website).
+- Manage pyjaipur [assets which are used for events/meetups etc](https://github.com/PyJaipur/PyJaipur/tree/master/website/src/images/assets).
+
+
+## Local setup for repo
+
+```bash
+git clone https://github.com/<your own fork>/PyJaipur
+git remote add pyj https://github.com/PyJaipur/PyJaipur
+
+# if you want to use python-poetry
+poetry install
+poetry shell
+
+# if you want to use vanilla virtualenv
+virtualenv -p python3 .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+
+# To submit changes
+# make your changes. Then
+git add <files you changed>
+git commit -m 'small description of your change'
+git push origin master
+# now open a Pull request to pyjaipur/master
+
+# To sync your master with pyjaipur
+git fetch pyj
+git checkout master
+git reset --hard pyj/master
+git push origin master -f
+```
+
 
 Changes to this repo are done as follows:
     - Fork this repo.
-    - Make your changes.
-    - Submit a PR to the master branch
+    - Make your changes in your copy of the fork.
+    - Submit a PR to the master branch.
     - Await discussion / review and then merge. 
+    - Sync your repo's master to pyjaipur master
 
 ## If you want to
 
 - Ask a question on telegram/ask for mentoring. Please go through the following articles when you have time:
     - https://www.dontasktoask.com
     - http://www.catb.org/~esr/faqs/smart-questions.html
-- [Submit a proposal for a talk](https://github.com/PyJaipur/Talks/issues/new)
+- [Submit a proposal for a talk](https://github.com/PyJaipur/Talks/issues/new?template=new_talk.md)
+- [Propose a new event](https://github.com/PyJaipur/Talks/issues/new?template=new_event.md)
 - [Make changes to pyjaipur.org](https://github.com/PyJaipur/PyJaipur/blob/master/website/README.md)
 - [See talk rankings, most :+1: first](https://github.com/PyJaipur/PyJaipur/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aupcoming+label%3Atalks+sort%3Areactions-%2B1-desc)
 - Photos and videos can be found under the event dates on [this google drive folder](https://drive.google.com/drive/folders/1cuZ9h7VYSXlJUYMALhBK62STvgoXMLn3?usp=sharing)
-- Add an event:
-    - Add your event to [the events.html file](https://github.com/PyJaipur/PyJaipur/blob/master/website/src/.events.html)
-    - Open a PR by replacing `theSage21` with your own github name in the following url: <https://github.com/PyJaipur/PyJaipur/compare/master...theSage21:master?template=new_event.md>
-    - Fill out the details needed for a new event.
-- Ask some questions regarding my code:
+- Ask some questions regarding your code:
     - Add your code to the scratch folder.
     - Open a pull request
+    - Or upload your code to gist.github.com
