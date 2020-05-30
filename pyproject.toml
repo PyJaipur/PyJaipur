@@ -7,6 +7,8 @@ authors = ["arjoonn sharma <arjoonn.94@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.6"
 staticsite = "^0.1.0"
+rauth = "^0.7.3"
+requests = "^2.23.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
