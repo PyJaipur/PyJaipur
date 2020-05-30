@@ -1,4 +1,4 @@
-<div class='alertstream'>
+<div class='alertstream hidden'>
   <h2>Events</h2>
   <a href='https://github.com/PyJaipur/PyJaipur/issues/new?assignees=&labels=event&template=event.md&title='>Add a new event</a>
   <noscript>To see only upcoming events please turn on javascript.</noscript>
@@ -186,6 +186,7 @@
   }
   order_alerts()
   cleanup_alerts()
+  document.querySelector('.alertstream').classList.remove('hidden')
 </script>
 <style>
 .alert .badge{
