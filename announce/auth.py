@@ -31,13 +31,13 @@ def refresh_twitter(sessions):
     sessions["twitter"] = session
 
 
-def get_sessions(path=".secret/auth.pickle"):
+def get_sessions(path):
     sessions = {}
-    if os.path.exists(path):
-        with open(path, "rb") as fl:
+    if os.path.exists(path / "sessions.pickle"):
+        with open(path / "sessions.pickle", "rb") as fl:
             sessions = pickle.load(fl)
     refresh_twitter(sessions)
     # ----------------------------
-    with open(path, "wb") as fl:
-        sessions = pickle.dump(fl)
+    with open(path / "sessions.pickle", "wb") as fl:
+        pickle.dump(sessions, fl)
     return sessions
