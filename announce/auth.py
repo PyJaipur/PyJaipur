@@ -1,37 +1,46 @@
 import os
 import pickle
 import requests
-from requests_oauthlib import OAuth1Session, OAuth1
+import logging
+from requests_oauthlib import OAuth1Session
+from announce import const
+
+log = logging.getLogger(__name__)
 
 
 def refresh_twitter(sessions):
+    request_token_url = "https://api.twitter.com/oauth/request_token"
+    access_token_url = "https://api.twitter.com/oauth/access_token"
+    authorize_url = "https://api.twitter.com/oauth/authorize"
+    base_url = const.tw
     session = sessions.get("twitter")
-    request_token_url="https://api.twitter.com/oauth/request_token"
-    access_token_url="https://api.twitter.com/oauth/access_token"
-    authorize_url="https://api.twitter.com/oauth/authorize"
-    base_url="https://api.twitter.com/1.1/"
     try:
         params = {"include_rts": 1, "count": 10}
-        r = session.get("statuses/home_timeline.json", params=params)
+        r = session.get(f"{base_url}/statuses/home_timeline.json", params=params)
+        log.info("Found cached twitter credentials")
     except Exception:
-        twitter = OAuth1Session(
-            client_key=os.environ.get("TWITTER_CONSUMER_KEY"),
-            client_secret=os.environ.get("TWITTER_CONSUMER_SECRET"),
+        log.info("Refreshing twitter auth")
+        client_key = os.environ.get("TWITTER_CONSUMER_KEY")
+        client_secret = os.environ.get("TWITTER_CONSUMER_SECRET")
+        oauth = OAuth1Session(client_key=client_key, client_secret=client_secret)
+        fetch_response = oauth.fetch_request_token(request_token_url)
+        resource_owner_key = fetch_response.get("oauth_token")
+        resource_owner_secret = fetch_response.get("oauth_token_secret")
+        authorization_url = oauth.authorization_url(authorize_url)
+        log.info("Please visit this url: ", authorization_url)
+        verifier = input("Enter pin: ")
+        oauth = OAuth1Session(
+            client_key,
+            client_secret=client_secret,
+            resource_owner_key=resource_owner_key,
+            resource_owner_secret=resource_owner_secret,
+            verifier=verifier,
         )
-        fetch_response = twitter.fetch_request_token(request_token_url)
-        {
-        oauth = OAuth1(client_key, client_secret=client_secret)
+        oauth_tokens = oauth.fetch_access_token(access_token_url)
+        session = oauth
+        params = {"include_rts": 1, "count": 10}
+        r = session.get(f"{base_url}/statuses/home_timeline.json", params=params)
 
-        request_token, request_token_secret = twitter.get_request_token()
-        authorize_url = twitter.get_authorize_url(request_token)
-        print(authorize_url)
-        pin = input("Enter pin: ")
-        session = twitter.get_auth_session(
-            request_token,
-            request_token_secret,
-            method="POST",
-            data={"oauth_verifier": pin},
-        )
     sessions["twitter"] = session
 
 
