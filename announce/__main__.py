@@ -72,3 +72,5 @@ elif args.new:
             root / "poster.jpeg",
         )
         print("Created symlink to monthly meetup poster for this event")
+    print("To announce this event please use:")
+    print(f"     python -m announce --event events/{year}/{month}/{date} --announce")

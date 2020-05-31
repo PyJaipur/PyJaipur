@@ -77,6 +77,10 @@ $ python -m announce --new
   Created events/2020/6/27/text.txt for description. Please fill it up
   Copy monthly meetup poster as poster for this event? (Y/n)
   Created symlink to monthly meetup poster for this event
+  To announce this event please use:
+       python -m announce --event events/2020/6/27 --announce
 
-$
+$ vim events/2020/6/27/text.txt  # To edit the description of the event.
+# Things can now be submitted in a PR for review. After reviewing we can announce on all social platforms.
+$ python -m announce --event events/2020/6/27 --announce
 ```
