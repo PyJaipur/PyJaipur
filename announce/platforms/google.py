@@ -44,5 +44,21 @@ def main(secret):
     log.info("Calendar created: %s", event.get("htmlLink"))
 
 
-if __name__ == "__main__":
-    main()
+def add_conferencing():
+    """javascript
+    var eventPatch = {
+      conferenceData: {
+        createRequest: {requestId: "7qxalsvy0e"}
+      }
+    };
+
+    gapi.client.calendar.events.patch({
+      calendarId: "primary",
+      eventId: "7cbh8rpc10lrc0ckih9tafss99",
+      resource: eventPatch,
+      sendNotifications: true,
+      conferenceDataVersion: 1
+    }).execute(function(event) {
+      console.log("Conference created for event: %s", event.htmlLink);
+    });
+    """
