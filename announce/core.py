@@ -5,7 +5,7 @@ from collections import namedtuple
 from functools import lru_cache
 from pathlib import Path
 from announce.auth import get_sessions
-from announce import const
+from announce.platforms import twitter, google
 
 log = logging.getLogger(__name__)
 
@@ -57,18 +57,8 @@ def announce(event_path, session_cache_path):
     Provide a path to the event folder. This is usually some path like `events/2020/5/21`.
     Session cache path is where the session cache is stored.
     """
-    update_website(event_path)
     event = get_event(event_path)
     sessions = get_sessions(session_cache_path)
-    # Twitter
-    data = {"status": event.short, "enable_dmcommands": True}
-    if event.poster is not None:
-        r = sessions["twitter"].post(
-            f"{const.tw_upload}/media/upload.json", files={"media": event.poster}
-        )
-        if r.status_code == 200:
-            log.info(r.json())
-            mid = r.json().get("media_id_string")
-            data["media_ids"] = mid
-    sessions["twitter"].post(f"{const.tw}/statuses/update.json", data=data)
-    log.info("Tweet done")
+    google.run(sessions["google"], event)
+    twitter.run(sessions["twitter"], event)
+    update_website(event_path)
