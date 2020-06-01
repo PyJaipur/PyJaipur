@@ -4,13 +4,8 @@ import random
 import pendulum
 import pickle
 import os.path
-import logging
 from urllib.parse import urlparse, parse_qs, urlencode
 from announce import const
-
-# If modifying these scopes, delete the file token.pickle.
-
-log = logging.getLogger()
 
 
 def run(session, event):

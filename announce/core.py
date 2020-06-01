@@ -2,15 +2,12 @@ import os
 import calendar
 from textwrap import dedent
 import pendulum
-import logging
 import json
 from functools import lru_cache
 from pathlib import Path
 from announce.auth import get_sessions
 from announce.platforms import twitter, google, website
 from announce import const
-
-log = logging.getLogger(__name__)
 
 
 @lru_cache()

@@ -68,15 +68,9 @@ Changes to this repo are done as follows:
 
 ```bash
 $ python -m announce --new
-  Year (2020):
-  Month (5):6
-  Date: 27
-  Event title (June meetup):
-  Start time (11:00:00):
-  Short description (TBD):
-  Created events/2020/6/27/text.txt for description. Please fill it up
-  Copy monthly meetup poster as poster for this event? (Y/n)
-  Created symlink to monthly meetup poster for this event
+  ...
+  ...
+  ...
   To announce this event please use:
        python -m announce --event events/2020/6/27 --announce
 

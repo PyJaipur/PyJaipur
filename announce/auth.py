@@ -1,14 +1,11 @@
 import os
 import pickle
 import requests
-import logging
 from requests_oauthlib import OAuth1Session
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from announce import const
-
-log = logging.getLogger(__name__)
 
 
 def refresh_google(sessions, path):
@@ -42,9 +39,9 @@ def refresh_twitter(sessions, path):
     try:
         params = {"include_rts": 1, "count": 10}
         r = session.get(f"{base_url}/statuses/home_timeline.json", params=params)
-        log.info("Found cached twitter credentials")
+        print("Found cached twitter credentials")
     except Exception:
-        log.info("Refreshing twitter auth")
+        print("Refreshing twitter auth")
         client_key = os.environ.get("TWITTER_CONSUMER_KEY")
         client_secret = os.environ.get("TWITTER_CONSUMER_SECRET")
         oauth = OAuth1Session(client_key=client_key, client_secret=client_secret)
@@ -52,7 +49,7 @@ def refresh_twitter(sessions, path):
         resource_owner_key = fetch_response.get("oauth_token")
         resource_owner_secret = fetch_response.get("oauth_token_secret")
         authorization_url = oauth.authorization_url(authorize_url)
-        log.info("Please visit this url: %s", authorization_url)
+        print("Please visit this url: %s", authorization_url)
         verifier = input("Enter pin: ")
         oauth = OAuth1Session(
             client_key,
