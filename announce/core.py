@@ -7,7 +7,7 @@ import json
 from functools import lru_cache
 from pathlib import Path
 from announce.auth import get_sessions
-from announce.platforms import twitter, google
+from announce.platforms import twitter, google, website
 from announce import const
 
 log = logging.getLogger(__name__)
@@ -47,32 +47,6 @@ def update_event(event_path, event):
         fl.write(json.dumps(ev))
     with open(event_path / "text.txt", "w") as fl:
         fl.write(event.description)
-
-
-def update_website(event):
-    with open("website/src/.events.html", "r") as fl:
-        html = fl.read()
-    start = event.start.format("DD MMMM YYYY HH:mm:ss") + " GMT+5:30"
-    if start in html:
-        return event
-    mark = "<!-- announce-new-event-after-this -->"
-    idx = html.find(mark) + len(mark)
-    ev_html = f"""
-
-  <div class='alert'>
-    <strong>{event.title}</strong><br>
-    <time>{start}</time><br>
-    <a class='badge' target="_blank" href="#">Add to calendar</a><br>
-    <a class='badge' href='#'>Call</a>
-    <hr>
-    {event.short}
-  </div>
-
-    """
-    with open("website/src/.events.html", "w") as fl:
-        fl.write(html[:idx] + ev_html + html[idx:])
-    log.info("Site updated")
-    return event
 
 
 def new_event():
@@ -162,5 +136,5 @@ def announce(event_path, session_cache_path):
     sessions = get_sessions(session_cache_path)
     event = google.run(sessions["google"], event)
     event = twitter.run(sessions["twitter"], event)
-    event = update_website(event)
+    event = website.run(sessions.get("website"), event)
     update_event(event_path, event)
