@@ -5,6 +5,8 @@ log = logging.getLogger()
 
 
 def run(session, event):
+    if event.tweet_id is not None:
+        return event
     data = {"status": event.short, "enable_dmcommands": True}
     if event.poster is not None:
         r = session.post(
@@ -14,5 +16,5 @@ def run(session, event):
             log.info(r.json())
             mid = r.json().get("media_id_string")
             data["media_ids"] = mid
-    session.post(f"{const.tw}/statuses/update.json", data=data)
-    log.info("Tweet done")
+    tweet = session.post(f"{const.tw}/statuses/update.json", data=data)
+    return const.Event(**{**event._asdict(), "tweet_id": tweet.json()["id"]})

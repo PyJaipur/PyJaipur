@@ -1,64 +1,61 @@
-from __future__ import print_function
-import datetime
+import string
+import json
+import random
+import pendulum
 import pickle
 import os.path
-from googleapiclient.discovery import build
-from google_auth_oauthlib.flow import InstalledAppFlow
-from google.auth.transport.requests import Request
 import logging
+from urllib.parse import urlparse, parse_qs, urlencode
+from announce import const
 
 # If modifying these scopes, delete the file token.pickle.
-SCOPES = ["https://www.googleapis.com/auth/calendar"]
 
 log = logging.getLogger()
 
 
-def main(secret):
-    creds = None
-    if os.path.exists(secret / "googletoken.pickle"):
-        with open(secret / "googletoken.pickle", "rb") as token:
-            creds = pickle.load(token)
-    # If there are no (valid) credentials available, let the user log in.
-    if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-        else:
-            flow = InstalledAppFlow.from_client_secrets_file(
-                secrets / "credentials.json", SCOPES
-            )
-            creds = flow.run_local_server(port=0)
-        # Save the credentials for the next run
-        with open(secrets / "token.pickle", "wb") as token:
-            pickle.dump(creds, token)
-
-    service = build("calendar", "v3", credentials=creds)
-
-    event = {
+def run(session, event):
+    if event.add_to_cal is not None:
+        return event
+    service = session
+    body = {
         "summary": event.title,
         "description": event.short,
-        "start": {"dateTime": event.start, "timeZone": "Asia/Kolkata",},
-        "end": {"dateTime": event.end, "timeZone": "Asia/Kolkata",},
+        "visibility": "public",
+        "start": {
+            "dateTime": event.start.to_iso8601_string(),
+            "timeZone": "Asia/Kolkata",
+        },
+        "end": {"dateTime": event.end.to_iso8601_string(), "timeZone": "Asia/Kolkata",},
     }
 
-    event = service.events().insert(calendarId="primary", body=event).execute()
-    log.info("Calendar created: %s", event.get("htmlLink"))
-
-
-def add_conferencing():
-    """javascript
-    var eventPatch = {
-      conferenceData: {
-        createRequest: {requestId: "7qxalsvy0e"}
-      }
-    };
-
-    gapi.client.calendar.events.patch({
-      calendarId: "primary",
-      eventId: "7cbh8rpc10lrc0ckih9tafss99",
-      resource: eventPatch,
-      sendNotifications: true,
-      conferenceDataVersion: 1
-    }).execute(function(event) {
-      console.log("Conference created for event: %s", event.htmlLink);
-    });
-    """
+    calevent = service.events().insert(calendarId="primary", body=body).execute()
+    link = calevent.get("htmlLink")
+    add_to_cal = "https://calendar.google.com/event?" + urlencode(
+        {
+            "action": "TEMPLATE",
+            "tmeid": parse_qs(urlparse(link).query)["eid"][0],
+            "tmsrc": const.email,
+            "scp": "ALL",
+        }
+    )
+    conf = (
+        service.events()
+        .patch(
+            calendarId="primary",
+            eventId=calevent.get("id"),
+            body={
+                "conferenceData": {
+                    "createRequest": {
+                        "requestId": f"pyj-{''.join(random.sample(string.ascii_lowercase, 10))}"
+                    }
+                }
+            },
+            sendNotifications=True,
+            conferenceDataVersion=1,
+        )
+        .execute()
+    )
+    call_link = conf.get("hangoutLink")
+    return const.Event(
+        **{**event._asdict(), "add_to_cal": add_to_cal, "call": call_link}
+    )

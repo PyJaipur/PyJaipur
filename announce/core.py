@@ -1,18 +1,20 @@
 import os
+import calendar
+from textwrap import dedent
+import pendulum
 import logging
 import json
-from collections import namedtuple
 from functools import lru_cache
 from pathlib import Path
 from announce.auth import get_sessions
 from announce.platforms import twitter, google
+from announce import const
 
 log = logging.getLogger(__name__)
 
 
 @lru_cache()
 def get_event(event_path):
-    Event = namedtuple("Event", "title start short description poster")
     with open(event_path / "meta.json", "r") as fl:
         meta = json.loads(fl.read())
     with open(event_path / "text.txt", "r") as fl:
@@ -23,23 +25,43 @@ def get_event(event_path):
         poster = open(event_path / "poster.jpeg", "rb")
     else:
         poster = None
-    ev = Event(meta["title"], meta["start"], meta["short"], text, poster)
+    ev = const.Event(
+        meta["title"],
+        pendulum.parse(meta["start"]),
+        pendulum.parse(meta["end"]),
+        meta["short"],
+        text,
+        poster,
+        meta.get("add_to_cal"),
+        meta.get("call"),
+        meta.get("tweet_id"),
+    )
     return ev
 
 
-def update_website(event_path):
-    event = get_event(event_path)
+def update_event(event_path, event):
+    with open(event_path / "meta.json", "w") as fl:
+        ev = dict(event._asdict())
+        ev["start"] = ev["start"].to_iso8601_string()
+        ev["end"] = ev["end"].to_iso8601_string()
+        fl.write(json.dumps(ev))
+    with open(event_path / "text.txt", "w") as fl:
+        fl.write(event.description)
+
+
+def update_website(event):
     with open("website/src/.events.html", "r") as fl:
         html = fl.read()
-    if event.start in html:
-        return
+    start = event.start.format("DD MMMM YYYY HH:mm:ss") + " GMT+5:30"
+    if start in html:
+        return event
     mark = "<!-- announce-new-event-after-this -->"
     idx = html.find(mark) + len(mark)
     ev_html = f"""
 
   <div class='alert'>
     <strong>{event.title}</strong><br>
-    <time>{event.start}</time><br>
+    <time>{start}</time><br>
     <a class='badge' target="_blank" href="#">Add to calendar</a><br>
     <a class='badge' href='#'>Call</a>
     <hr>
@@ -50,6 +72,85 @@ def update_website(event_path):
     with open("website/src/.events.html", "w") as fl:
         fl.write(html[:idx] + ev_html + html[idx:])
     log.info("Site updated")
+    return event
+
+
+def new_event():
+    this_year = str(pendulum.now().year)
+    this_month = str(pendulum.now().month)
+    year = input(f"Year ({this_year}):")
+    year = year.strip() if year.strip() else this_year
+    month = input(f"Month ({this_month}):")
+    month = month.strip() if month.strip() else this_month
+    date = input("Date: ").strip()
+    os.makedirs(Path(".") / "events" / year / month / date, exist_ok=True)
+    # ------------------
+    default_title = f"{calendar.month_name[int(month)]} meetup"
+    title = input(f"Event title ({default_title}):")
+    title = title if title else default_title
+    default_start = "11:00:00"
+    start = input(f"Start time ({default_start}):")
+    start = start if start else default_start
+    start = pendulum.datetime(
+        int(year),
+        int(month),
+        int(date),
+        int(start.split(":")[0]),
+        int(start.split(":")[1]),
+        int(start.split(":")[2]),
+        tz="Asia/Kolkata",
+    )
+    default_end = "12:00:00"
+    end = input(f"End time ({default_end}):")
+    end = end if end else default_end
+    end = pendulum.datetime(
+        int(year),
+        int(month),
+        int(date),
+        int(end.split(":")[0]),
+        int(end.split(":")[1]),
+        int(end.split(":")[2]),
+        tz="Asia/Kolkata",
+    )
+    default_short = "TBD"
+    short = input(f"Short description ({default_short}):")
+    short = short if short else default_short
+    root = Path(".") / "events" / year / month / date
+    with open(root / "meta.json", "w") as fl:
+        fl.write(
+            json.dumps(
+                {
+                    "title": title,
+                    "start": start.to_iso8601_string(),
+                    "short": short,
+                    "end": end.to_iso8601_string(),
+                }
+            )
+        )
+    with open(root / "text.txt", "w") as fl:
+        fl.write(
+            dedent(
+                """\
+        Please use pyjaipur.org/#call to join the call.
+        #pyjaipur #event
+        """
+            )
+        )
+    print(f"Created {root/'text.txt'} for description. Please fill it up")
+    poster = input(f"Copy monthly meetup poster as poster for this event? (Y/n)")
+    if poster.strip().lower() in ("", "y"):
+        os.symlink(
+            Path(".")
+            / "website"
+            / "src"
+            / "images"
+            / "assets"
+            / "monthly_meetup_thumbnail.jpeg",
+            root / "poster.jpeg",
+        )
+        print("Created symlink to monthly meetup poster for this event")
+    print("To announce this event please use:")
+    print(f"     python -m announce --event events/{year}/{month}/{date} --announce")
 
 
 def announce(event_path, session_cache_path):
@@ -59,6 +160,7 @@ def announce(event_path, session_cache_path):
     """
     event = get_event(event_path)
     sessions = get_sessions(session_cache_path)
-    google.run(sessions["google"], event)
-    twitter.run(sessions["twitter"], event)
-    update_website(event_path)
+    event = google.run(sessions["google"], event)
+    event = twitter.run(sessions["twitter"], event)
+    event = update_website(event)
+    update_event(event_path, event)
