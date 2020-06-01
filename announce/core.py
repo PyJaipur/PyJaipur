@@ -19,12 +19,11 @@ def get_event(event_path):
         meta = json.loads(fl.read())
     with open(event_path / "text.txt", "r") as fl:
         text = fl.read()
+    poster = None
     if os.path.exists(event_path / "poster.png"):
         poster = open(event_path / "poster.png", "rb")
     elif os.path.exists(event_path / "poster.jpeg"):
         poster = open(event_path / "poster.jpeg", "rb")
-    else:
-        poster = None
     ev = const.Event(
         meta["title"],
         pendulum.parse(meta["start"]),
@@ -44,7 +43,7 @@ def update_event(event_path, event):
         ev = dict(event._asdict())
         ev["start"] = ev["start"].to_iso8601_string()
         ev["end"] = ev["end"].to_iso8601_string()
-        fl.write(json.dumps(ev))
+        fl.write(json.dumps(ev, indent=2))
     with open(event_path / "text.txt", "w") as fl:
         fl.write(event.description)
 

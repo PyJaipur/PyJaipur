@@ -20,5 +20,4 @@ def run(session, event):
     """
     with open("website/src/.events.html", "w") as fl:
         fl.write(html[:idx] + ev_html + html[idx:])
-    log.info("Site updated")
     return event
