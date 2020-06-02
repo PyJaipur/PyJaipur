@@ -6,7 +6,7 @@ import json
 from functools import lru_cache
 from pathlib import Path
 from announce.auth import get_sessions
-from announce.platforms import twitter, google, website
+from announce.platforms import twitter, google, website, mailinglist
 from announce import const
 
 
@@ -132,5 +132,6 @@ def announce(event_path, session_cache_path):
     sessions = get_sessions(session_cache_path)
     event = google.run(sessions["google"], event)
     event = twitter.run(sessions["twitter"], event)
+    event = mailinglist.run(sessions.get("mailinglist"), event)
     event = website.run(sessions.get("website"), event)
     update_event(event_path, event)

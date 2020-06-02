@@ -76,5 +76,5 @@ $ python -m announce --new
 
 $ vim events/2020/6/27/text.txt  # To edit the description of the event.
 # Things can now be submitted in a PR for review. After reviewing we can announce on all social platforms.
-$ python -m announce --event events/2020/6/27 --announce
+$ (source .secret/env && python -m announce --event events/2020/6/27 --announce)
 ```
