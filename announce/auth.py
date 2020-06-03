@@ -5,7 +5,38 @@ from requests_oauthlib import OAuth1Session
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
+from urllib.parse import urlparse, parse_qs, urlencode
 from announce import const
+
+
+def refresh_linkedin(sessions, path):
+    API_KEY = os.environ.get("LINKEDIN_CLIENT_ID")
+    API_SECRET = os.environ.get("LINKEDIN_CLIENT_SECRET")
+    RETURN_URL = "http://localhost:9126/code"
+    session = sessions.get("linkedin")
+    url = "https://www.linkedin.com/oauth/v2/authorization/?" + urlencode(
+        {
+            "response_type": "code",
+            "client_id": API_KEY,
+            "redirect_uri": RETURN_URL,
+            "scope": "w_member_social",
+        }
+    )
+    print("Visit this url:", url)
+    q = input("Enter redirected url: ")
+    code = parse_qs(urlparse(ru).query).get("code")[0]
+    r = requests.get(
+        "https://www.linkedin.com/oauth/v2/accessToken",
+        params={
+            "grant_type": "authorization_code",
+            "code": code,
+            "redirect_uri": RETURN_URL,
+            "client_it": API_KEY,
+            "client_secret": API_SECRET,
+        },
+    )
+    access_token = r.json().get("access_token")
+    sessions["linkedin"] = {"access_token": access_token, "code": code}
 
 
 def refresh_google(sessions, path):
@@ -71,6 +102,8 @@ def get_sessions(path):
     if os.path.exists(path / "sessions.pickle"):
         with open(path / "sessions.pickle", "rb") as fl:
             sessions = pickle.load(fl)
+    # TODO(thesage21): linkedin app permissions need approval
+    # refresh_linkedin(sessions, path)
     refresh_twitter(sessions, path)
     refresh_google(sessions, path)
     # ----------------------------

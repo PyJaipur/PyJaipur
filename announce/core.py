@@ -6,7 +6,7 @@ import json
 from functools import lru_cache
 from pathlib import Path
 from announce.auth import get_sessions
-from announce.platforms import twitter, google, website, mailinglist
+from announce.platforms import twitter, google, website, mailinglist, linkedin
 from announce import const
 
 
@@ -31,6 +31,8 @@ def get_event(event_path):
         meta.get("add_to_cal"),
         meta.get("call"),
         meta.get("tweet_id"),
+        meta.get("email_sent"),
+        meta.get("linkedin_id"),
     )
     return ev
 
@@ -130,6 +132,8 @@ def announce(event_path, session_cache_path):
     """
     event = get_event(event_path)
     sessions = get_sessions(session_cache_path)
+    # TODO(thesage21): linkedin app permissions need approval
+    # event = linkedin.run(sessions.get("linkedin"), event)
     event = google.run(sessions["google"], event)
     event = twitter.run(sessions["twitter"], event)
     event = mailinglist.run(sessions.get("mailinglist"), event)
