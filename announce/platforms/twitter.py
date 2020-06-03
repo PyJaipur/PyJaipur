@@ -4,7 +4,10 @@ from announce import const
 def run(session, event):
     if event.tweet_id is not None:
         return event
-    data = {"status": event.short, "enable_dmcommands": True}
+    data = {
+        "status": f"{event.short}\n\nUse pyjaipur.org/#call to join in.🙂",
+        "enable_dmcommands": True,
+    }
     if event.poster is not None:
         r = session.post(
             f"{const.tw_upload}/media/upload.json", files={"media": event.poster}

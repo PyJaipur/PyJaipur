@@ -30,4 +30,4 @@ def send(*, to, subject, message):
 def run(session, event):
     message = f"Hello,\n\n{event.description}\n\nThanks,\nPyJaipur"
     send(to=const.mailing_list_email, subject=event.title, message=message)
-    return const.Event(**{**(event._todict()), "email_sent": True})
+    return const.Event(**{**(event._asdict()), "email_sent": True})

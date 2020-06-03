@@ -42,6 +42,7 @@ def update_event(event_path, event):
         ev = dict(event._asdict())
         ev["start"] = ev["start"].to_iso8601_string()
         ev["end"] = ev["end"].to_iso8601_string()
+        ev.pop("poster")
         fl.write(json.dumps(ev, indent=2))
     with open(event_path / "text.txt", "w") as fl:
         fl.write(event.description)
