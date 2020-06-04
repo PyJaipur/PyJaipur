@@ -1,11 +1,19 @@
 import requests
+from announce import const
 
 
 def run(session, event):
     headers = {"Authorization": f"Bearer {session.get('access_token')}"}
-    uid = requests.get("https://api.linkedin.com/v2/me", headers=headers).json()["id"]
+    # r = requests.get(
+    # f"https://api.linkedin.com/v2/organizations/{const.linkedin_org_id}",
+    # headers=headers,
+    # )
+    # This must not be done. we need an org post.
+    # r = requests.get("https://api.linkedin.com/v2/me", headers=headers)
+    # uid = r.json()["id"]
+    uid = const.linkedin_org_id
     data = {
-        "author": f"urn:li:person:{uid}",
+        "author": f"urn:li:organization:{uid}",
         "lifecycleState": "PUBLISHED",
         "specificContent": {
             "com.linkedin.ugc.ShareContent": {
@@ -21,7 +29,7 @@ def run(session, event):
             json={
                 "registerUploadRequest": {
                     "recipes": ["urn:li:digitalmediaRecipe:feedshare-image"],
-                    "owner": f"urn:li:person:{uid}",
+                    "owner": f"urn:li:organization:{uid}",
                     "serviceRelationships": [
                         {
                             "relationshipType": "OWNER",
@@ -38,17 +46,20 @@ def run(session, event):
         url = url["com.linkedin.digitalmedia.uploading.MediaUploadHttpRequest"][
             "uploadUrl"
         ]
-        r = requests.post(url, files=event.poster, headers=headers)
-        data["specificContent"]["shareMediaCategory"] = "IMAGE"
-        data["specificContent"]["media"] = [
-            {
-                "status": "READY",
-                "description": {"text": "Center stage!"},
-                "media": asset,
-                "title": {"text": event.title},
-            }
+        event.poster.seek(0)
+        h = {
+            "Accept": "*/*",
+            **headers,
+        }
+        r = requests.put(url, data=event.poster.read(), headers=h)
+        data["specificContent"]["com.linkedin.ugc.ShareContent"][
+            "shareMediaCategory"
+        ] = "IMAGE"
+        data["specificContent"]["com.linkedin.ugc.ShareContent"]["media"] = [
+            {"status": "READY", "media": asset, "title": {"text": event.title},}
         ]
     r = requests.post(
         "https://api.linkedin.com/v2/ugcPosts", json=data, headers=headers,
     )
-    return event
+    print(r.json())
+    return const.Event(**{**event._asdict(), "linkedin_id": r.json()["id"]})

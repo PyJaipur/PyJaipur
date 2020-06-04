@@ -14,24 +14,29 @@ def refresh_linkedin(sessions, path):
     API_SECRET = os.environ.get("LINKEDIN_CLIENT_SECRET")
     RETURN_URL = "http://localhost:9126/code"
     session = sessions.get("linkedin")
+    headers = {"Authorization": f"Bearer {session.get('access_token')}"}
+    r = requests.get("https://api.linkedin.com/v2/me", headers=headers)
+    if r.json().get("id"):
+        return
+
     url = "https://www.linkedin.com/oauth/v2/authorization/?" + urlencode(
         {
             "response_type": "code",
             "client_id": API_KEY,
             "redirect_uri": RETURN_URL,
-            "scope": "w_member_social",
+            "scope": "w_member_social r_liteprofile",
         }
     )
     print("Visit this url:", url)
     q = input("Enter redirected url: ")
-    code = parse_qs(urlparse(ru).query).get("code")[0]
+    code = parse_qs(urlparse(q).query).get("code")[0]
     r = requests.get(
         "https://www.linkedin.com/oauth/v2/accessToken",
         params={
             "grant_type": "authorization_code",
             "code": code,
             "redirect_uri": RETURN_URL,
-            "client_it": API_KEY,
+            "client_id": API_KEY,
             "client_secret": API_SECRET,
         },
     )
@@ -103,9 +108,9 @@ def get_sessions(path):
         with open(path / "sessions.pickle", "rb") as fl:
             sessions = pickle.load(fl)
     # TODO(thesage21): linkedin app permissions need approval
-    # refresh_linkedin(sessions, path)
-    refresh_twitter(sessions, path)
-    refresh_google(sessions, path)
+    refresh_linkedin(sessions, path)
+    # refresh_twitter(sessions, path)
+    # refresh_google(sessions, path)
     # ----------------------------
     with open(path / "sessions.pickle", "wb") as fl:
         pickle.dump(sessions, fl)

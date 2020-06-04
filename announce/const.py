@@ -10,3 +10,4 @@ Event = namedtuple(
 )
 
 mailing_list_email = "pyjaipur@python.org"
+linkedin_org_id = 14380746
