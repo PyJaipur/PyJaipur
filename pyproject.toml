@@ -7,16 +7,6 @@ authors = ["arjoonn sharma <arjoonn.94@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.6"
 staticsite = "^0.1.0"
-requests = "^2.23.0"
-requests-oauthlib = "^1.3.0"
-google-api-python-client = "^1.8.4"
-google-auth-httplib2 = "^0.0.3"
-google-auth-oauthlib = "^0.4.1"
-pendulum = "^2.1.0"
-oauth2client = "^4.1.3"
-Jinja2 = "^2.11.2"
-bottle = "^0.12.18"
-bottle-tools = "^2019.12.22"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
