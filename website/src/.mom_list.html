@@ -1,0 +1,10 @@
+<h2>Meet logs</h2>
+<ul>
+  {% for date, issue_num in [
+    ('14 June 2020', 100),
+    ('07 June 2020', 95),
+    ('25 May  2020', 87)
+    ] %}
+    <li> <a href='https://github.com/PyJaipur/PyJaipur/issues/{{ issue_num }}'>{{ date }}</a> </li>
+  {% endfor %}
+</ul>
