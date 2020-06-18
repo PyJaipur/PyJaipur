@@ -4,187 +4,32 @@
   <noscript>To see only upcoming events please turn on javascript.</noscript>
 
   <!--
-    Place each event in it's own div.
+    Each event in it's own div.
     Events will be sorted by their time tag.
-    Events in the past will be removed.
+    Events in the past will be removed via JS and template logic.
     pyjaipur.org#call will redirect to any live event's call link if it is jitsi or meet.google.com
   -->
   <!-- announce-new-event-after-this -->
 
-  {% for event in [
-
-{
-'title': 'Volunteer meetup',
-'start': '21 June 2020 21:00:00 GMT+5:30',
-'call':'https://meet.google.com/juf-iyha-wrs',
-'calendar': 'https://calendar.google.com/event?action=TEMPLATE&tmeid=MGlqaWgxdjk2Zm9lNDloMWtpMGxpcWhoaHMgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com',
-'desc': "We're having a volunteer meetup this sunday at 9 pm! Come join the community!",
-}
-
-                  ] %}
-    {% if show_all_events or plugins.in_future(event.start) %}
+  {% for event in events %}
+    {% if show_all or plugins.in_future(event.start) %}
       <div class='alert'>
         <strong>{{ event.title }}</strong><br>
         <time>{{ event.start }}</time><br>
-        <a class='badge' target="_blank" href="{{ event.calendar }}">Add to calendar</a><br>
-        <a class='badge' href='{{ event.call }}'>Call</a>
+        {% for badge in event.badges %}
+          <a class='badge' target='_blank' href='{{ badge.href }}'>{{ badge.text }}</a>
+          {% if badge.br_after %}<br>{% endif %}
+        {% endfor %}
         <hr>
         {{ event.desc }}
       </div>
     {% endif %}
   {% endfor %}
-
-  <div class='alert'>
-    <strong>Volunteer meetup</strong><br>
-    <time>14 June 2020 21:00:00 GMT+5:30</time><br>
-    <a class='badge' target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=aHIya2E3MWg4YzMxcGpyZWFpcnFrYmZvb2sgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com">Add to calendar</a><br>
-    <a class='badge' href='https://meet.google.com/csw-pupv-zaq'>Call</a>
-    <hr>
-    We're having a volunteer meetup this sunday at 9 pm! Come join the community!
-  </div>
-
-
-  <div class='alert'>
-    <strong>Volunteer meetup</strong><br>
-    <time>07 June 2020 21:00:00 GMT+5:30</time><br>
-    <a class='badge' target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NG04c3M0MmJvcXBmb2tlOWo5N2ZuZTNhZXZfMjAyMDA1MzFUMTUzMDAwWiBweWphaXB1ci5pbmRpYUBt&tmsrc=pyjaipur.india%40gmail.com&scp=ALL">Add to calendar</a><br>
-    <a class='badge' href='https://meet.google.com/jqw-eiqg-afd'>Call</a>
-    <hr>
-    We're having a volunteer meetup this sunday at 9 pm! Come join the community!
-  </div>
-
-    
-
-  <div class='alert'>
-    <strong>Volunteer meetup</strong><br>
-    <time>07 June 2020 21:00:00 GMT+5:30</time><br>
-    <a class='badge' target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NG04c3M0MmJvcXBmb2tlOWo5N2ZuZTNhZXZfMjAyMDA2MDdUMTUzMDAwWiBweWphaXB1ci5pbmRpYUBt&tmsrc=pyjaipur.india%40gmail.com">Add to calendar</a><br>
-    <a class='badge' href='https://meet.google.com/jqw-eiqg-afd'>Call</a>
-    <hr>
-    We're having a volunteer meetup this sunday at 9 pm! Come join the community!
-  </div>
-
-    
-
-  <div class='alert'>
-    <strong>Volunteer meet</strong><br>
-    <time>31 May 2020 21:00:00 GMT+5:30</time><br>
-    <a class='badge' target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NG04c3M0MmJvcXBmb2tlOWo5N2ZuZTNhZXZfMjAyMDA1MzFUMTUzMDAwWiBweWphaXB1ci5pbmRpYUBt&tmsrc=pyjaipur.india%40gmail.com&scp=ALL">Add to calendar</a><br>
-    <a class='badge' href='https://meet.google.com/jqw-eiqg-afd'>Call</a>
-    <hr>
-    General meetup + volunteer tasks.
-  </div>
-
-  <div class='alert'>
-    <strong>Volunteer meet</strong><br>
-    <time>21 May 2020 21:00:00 GMT+5:30</time><br>
-    <a class='badge' target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MnRqazBoODFrbG1waHY3aTRkajUwb2o1aXMgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com">Add to calendar</a><br>
-    <a class='badge' href='https://meet.google.com/vvx-bpdt-ddz'>Call</a>
-    <a class='badge' href='https://www.meetup.com/PyJaipur/events/270762371/'>Meetup.com</a>
-    <a class='badge' href='https://github.com/PyJaipur/PyJaipur/projects/2'>Github</a>
-    <hr>
-    <ol>
-      <li>Telegram group link policy</li>
-      <li>Ilugd collab</li>
-      <li>Social media responsibilities</li>
-    </ol>
-  </div>
-
-
-  <div class='alert'>
-    <strong>Volunteer meet</strong><br>
-    <time>17 May 2020 11:00:00 GMT+5:30</time><br>
-    <a class='badge' target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NmFjbzFsMTE1MGZiZmhmNW1ycWo1dWMxaXEgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com">Add to calendar</a><br>
-    <a class='badge' href='https://meet.google.com/amu-yvdt-ncp'>Call</a>
-    <a class='badge' href='https://www.meetup.com/PyJaipur/events/270688368/'>Meetup.com</a>
-    <hr>
-    <ol>
-      <li>Telegram group link policy</li>
-      <li>June meetup talk topics</li>
-      <li>Social media responsibilities</li>
-    </ol>
-  </div>
-
-  <div class='alert'>
-    <strong>PyCloud mini-conference</strong><br>
-    <time>30 May 2020 11:00:00 GMT+5:30</time><br>
-    <a class='badge' target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NWR2ZzJibWFsYWZiZDZtMjg1MmlvaWE1OWcgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com">Add to calendar</a><br>
-    <a class='badge' href='https://www.meetup.com/Bangalore-Python-Group/events/270234917/'>Meetup.com</a>
-    <hr>
-    <ol>
-      <li>Building Search Experience for a Python Web Application</li>
-      <li>Build and Run Stock Analysis on Azure Functions Using Python</li>
-      <li>Using the Azure Machine Learning Python SDK to Train a PyTorch model at Scale</li>
-    </ol>
-  </div>
-
-
-  <div class='alert'>
-    <strong>May meetup</strong><br>
-    <time>23 May 2020 10:00:00 GMT+5:30</time><br>
-    <a class='badge' target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NmRodHRyc3F1OWYyZWRncmRrc3MzMWpzaDYgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com">Add to calendar</a><br>
-    <a class='badge' href='https://meet.google.com/jyd-gbuj-vhy'>Call</a>
-    <a class='badge' href='https://www.meetup.com/PyJaipur/events/270530002/'>Meetup.com</a>
-    <hr>
-    <ol>
-      <li><a href='https://github.com/PyJaipur/PyJaipur/issues/52'>SOLID principles</a></li>
-      <li><a href='https://github.com/PyJaipur/PyJaipur/issues/53'>React JS & React native</a></li>
-    </ol>
-  </div>
-
-
-  <div class='alert'>
-    <strong>May meetup - Dev Sprints</strong><br>
-    <time>3 May 2020 10:00:00 GMT+5:30</time>
-    <a target="_blank" href="https://calendar.google.com/event?	action=TEMPLATE&tmeid=NHE5ZWg5cmdjcm1yMjEza2dqbXB2b3VlbmMgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
-">Add to calendar</a>
-    <a href='https://www.meetup.com/PyJaipur/events/qxctrrybchbfc/'>Meetup.com</a><br>
-    <hr>
-    <p>TBD</p>
-  </div>
-
-
-  <div class='alert'>
-    <strong>SoA call</strong><br>
-    <time>25 Apr 2020 17:00:00 GMT+5:30</time>
-    <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MTRkaTlsbG5oNG1ycG9yZGxvNDBjMWhvajggcHlqYWlwdXIuaW5kaWFAbQ&amp;tmsrc=pyjaipur.india%40gmail.com">Add to calendar</a>
-    <a href='https://github.com/PyJaipur/SoA/projects/1'>Github</a><br>
-    <hr>
-    <p>Progress updates on SoA and beginning the marketing cycle.</p>
-  </div>
-
-
-  <div class='alert'>
-    <strong>April meetup</strong><br>
-    <time>25 Apr 2020 10:00:00 GMT+5:30</time>
-    <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MDF2Nm1yMWhyMGdoZWViMDRlNXI0dmFsNjQgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com">Add to calendar</a>
-    <a href='https://www.meetup.com/PyJaipur/events/jmsdqrybcgbhc/'>Meetup.com</a><br>
-    <hr>
-    <p>RNN families</p>
-  </div>
-
-  <div class='alert'>
-    <strong>SoA call</strong><br>
-    <time>18 Apr 2020 11:00:00 GMT+5:30</time>
-    <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MHRsdG1vNnVxdjFhM2FsNWtocWw1ZnI3MGsgYXJqb29ubi5tc2Njc2M1QGlpaXRtay5hYy5pbg&amp;tmsrc=arjoonn.msccsc5%40iiitmk.ac.in">Add to calendar</a>
-    <a href='https://github.com/PyJaipur/Summer-of-Algorithm/issues/10'>Github</a>
-    <hr>
-    <p>Finalize SoA structure, dates, duration, and tasklist.</p>
-  </div>
-
-  
-  <div class='alert'>
-    <strong>Weekend call</strong><br>
-    <time>19 Apr 2020 17:00:00 GMT+5:30</time>
-    <a target="_blank" href="https://calendar.google.com/calendar/r/eventedit/copy/MWh2MjVpMm02dWh2YzJsZm52NGFiYnRyZWYgcHlqYWlwdXIuaW5kaWFAbQ/c2hpdmFua2dhdXRhbTk4QGdtYWlsLmNvbQ?sf=true">Add to calendar</a>
-    <a href='https://github.com/PyJaipur/PyJaipur/issues/33'>Github</a>
-    <a href='https://meet.google.com/awt-ibrq-yqm'>Call link</a>
-    <hr>
-    <p>Talking about vim and terminal usage.</p>
-  </div>
-
+  {% if show_all %}
+    {% include '.event_archive.html' %}
+  {% endif %}
 <br>
-<a href='/?AllEvents=yes'>Show all past events</a>
+<a href='/all_events.html?AllEvents=yes'>Show all past events</a>
 </div>
 <!-- Place your events above this code please.  This script removes old events
   in the browser so that we don't have to manually clean them up everyday -->
