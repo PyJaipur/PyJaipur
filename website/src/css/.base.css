@@ -6,9 +6,9 @@ body{
   color: var(--fg);
   display: grid;
   grid-template-areas:
-    "left"
     "center"
-    "right";
+    "right"
+    "left";
 }
 @media (min-width: 500px){
   body{

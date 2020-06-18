@@ -1,1 +1,3 @@
 baseurl: ''
+plugins:
+    in_future: 'plugins.in_future'
