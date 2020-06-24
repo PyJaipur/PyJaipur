@@ -1,19 +1,13 @@
 {% extends '.base.html' %}
-{% block head %}
-<style>
-.center{
-  text-align: center;
-}
-.left {text-align: left;}
-</style>
-{% endblock %}
 {% block content %}
-<div class='center'>
-  <h1>
-    {% include 'images/.pyj.svg' %}
+<div class='center ga-mainhead'>
+  {% include 'images/.pyj.svg' %}
+  <h1 style='display: inline-block;'>
     PyJaipur
   </h1>
-  {% include '.platforms.html' %}
+</div>
+<div class='center ga-main'>
+    {% include '.platforms.html' %}
   <p>
   PyJaipur is a non-profit local python user group/community in <a href='https://goo.gl/maps/eZEFGimUg7Hg7kMT6' target='_blank'>Jaipur, Rajasthan</a>.
   We follow this <a href='https://www.python.org/psf/conduct/'>Code of Conduct</a> at all times.

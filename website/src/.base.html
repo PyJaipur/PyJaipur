@@ -13,15 +13,9 @@
   </head>
 
 <body>
-  <div class='grid-left'>
-    {% include '.mom_list.html' %}
-  </div>
-  <div class='content grid-mid'>
+  {% include '.mom_list.html' %}
   {% block content %}{% endblock %}
-  </div>
-  <div class='grid-right'>
   {% include '.events.html' %}
-  </div>
   {% if autoreload %}
     {% include '.autoreload.html' %}
   {% endif %}

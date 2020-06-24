@@ -1,11 +1,15 @@
-<h2>Meet logs</h2>
-<ul>
-  {% for date, issue_num in [
-    ('21 June 2020', 103),
-    ('14 June 2020', 100),
-    ('07 June 2020', 95),
-    ('25 May  2020', 87)
-    ] %}
-    <li> <a href='https://github.com/PyJaipur/PyJaipur/issues/{{ issue_num }}'>{{ date }}</a> </li>
-  {% endfor %}
-</ul>
+<div class='center ga-momhead'>
+  <h1>Meet logs</h1>
+</div>
+<div class='center ga-mom'>
+  <ul>
+    {% for date, issue_num in [
+      ('21 June 2020', 103),
+      ('14 June 2020', 100),
+      ('07 June 2020', 95),
+      ('25 May  2020', 87)
+      ] %}
+      <li> <a href='https://github.com/PyJaipur/PyJaipur/issues/{{ issue_num }}'>{{ date }}</a> </li>
+    {% endfor %}
+  </ul>
+</div>
