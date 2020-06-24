@@ -1,8 +1,11 @@
-<div class='alertstream hidden'>
-  <h2>Events</h2>
+<div class='center ga-eventhead'>
+  <h1>Events</h1>
   <a href='https://github.com/PyJaipur/PyJaipur/issues/new?assignees=&labels=event&template=event.md&title='>Add a new event</a>
   <noscript>To see only upcoming events please turn on javascript.</noscript>
-
+  <br>
+  <!--<a href='/all_events.html?AllEvents=yes'>Show all past events</a>-->
+</div>
+<div class='alertstream hidden ga-event'>
   <!--
     Each event in it's own div.
     Events will be sorted by their time tag.
@@ -28,8 +31,6 @@
   {% if show_all %}
     {% include '.event_archive.html' %}
   {% endif %}
-<br>
-<a href='/all_events.html?AllEvents=yes'>Show all past events</a>
 </div>
 <!-- Place your events above this code please.  This script removes old events
   in the browser so that we don't have to manually clean them up everyday -->
@@ -80,9 +81,9 @@
       alerts[i].parentNode.removeChild(alerts[i]);
     }
     final_order.sort(function (a, b) { return b.start_time - a.start_time})
-    var new_event_link = document.querySelector('.alertstream a');
+    var alert_stream = document.querySelector('.alertstream');
     for (var i = 0; i < alerts.length; ++i){
-      new_event_link.insertAdjacentElement('afterend', final_order[i].node);
+      alert_stream.appendChild(final_order[i].node);
     }
     console.log(final_order)
   }
@@ -111,16 +112,15 @@
 @media only screen and (min-width: 768px) {
   .alert {
     padding:5px;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 5px 0px 0px 0px;
     padding-bottom:5px;
     margin-top: 10px;
     border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 0px;
+    border-left: 1px solid black;
+    border-bottom: 0px;
+    border-right: 0px;
   }
   .alertstream {
-    border-left: 1px solid black;
     background-color: var(--bg);
     padding: 10px;
     padding-top:0px;
