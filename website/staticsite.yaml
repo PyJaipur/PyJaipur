@@ -11,7 +11,7 @@ events:
         text: 'Call'
     desc: "Come attend our monthly meetup! We're talking about:
       <ul>
-      <li><a href='https://github.com/PyJaipur/PyJaipur/issues/54'>Web automation with Python</a></li>
+      <li><a href='https://github.com/PyJaipur/PyJaipur/issues/54'>Web automation with RPA</a></li>
       <li><a href='https://github.com/PyJaipur/PyJaipur/issues/113'>Talking about APIs</a></li>
       <ul>
       "
