@@ -1,15 +1,28 @@
 <div class='center ga-momhead'>
-  <h1>Meet logs</h1>
+  <h1>Logs</h1>
 </div>
-<div class='center ga-mom'>
+<div class='left ga-mom' style='font-family:monospace;'>
   <ul>
-    {% for date, issue_num in [
-      ('21 June 2020', 103),
-      ('14 June 2020', 100),
-      ('07 June 2020', 95),
-      ('25 May  2020', 87)
+    {% for item in [
+      ('28 Jun 2020 | ILUG-D collab', 'https://www.youtube.com/watch?v=X6xlcdbEM04', 'notmom'),
+      ('27 Jun 2020 | Meetup', 'https://www.youtube.com/watch?v=sVWVgonpy4o&list=PLgcz68896VeOhl-_rOwoeLIdqX2vNJoHH&index=2', 'notmom'),
+      ('21 Jun 2020 | Volunteer meet', 103),
+      ('14 Jun 2020 | Volunteer meet', 100),
+      ('07 Jun 2020 | Volunteer meet', 95),
+      ('25 May 2020 | Volunteer meet', 87),
+      ('22 May 2020 | Meetup', 'https://www.youtube.com/watch?v=4qIqNCYEZr0&list=PLgcz68896VeOhl-_rOwoeLIdqX2vNJoHH&index=3', 'notmom'),
+      ('25 Apr 2020 | Meetup', 'https://www.youtube.com/watch?v=FLk3oQ3dzmM&list=PLgcz68896VeOhl-_rOwoeLIdqX2vNJoHH&index=4', 'notmom'),
+      ('27 Mar 2020 | Meetup', 'https://www.youtube.com/watch?v=6EzDbITt104&list=PLgcz68896VeOhl-_rOwoeLIdqX2vNJoHH&index=5', 'notmom'),
       ] %}
-      <li> <a href='https://github.com/PyJaipur/PyJaipur/issues/{{ issue_num }}'>{{ date }}</a> </li>
+      {% if not item[3] %}
+        {% set date = item[0] %}
+        {% set issue_num = item[1] %}
+        <li> <a href='https://github.com/PyJaipur/PyJaipur/issues/{{ issue_num }}'>{{ date }}</a> </li>
+      {% else %}
+        {% set text = item[0] %}
+        {% set link = item[1] %}
+        <li> <a href='{{ link }}'>{{ text }}</a> </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
