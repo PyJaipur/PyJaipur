@@ -22,6 +22,9 @@ events:
         text: 'Add to calendar'
       - href: 'https://www.linuxdelhi.org/'
         text: 'ILUG-D website'
+        br_after: true
+      - href: 'https://www.youtube.com/watch?v=X6xlcdbEM04'
+        text: 'Live stream'
     desc: "
     We're having a collab event with 
     <a href='https://www.linuxdelhi.org/'>
