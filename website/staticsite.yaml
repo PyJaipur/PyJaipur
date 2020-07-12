@@ -3,7 +3,7 @@ plugins:
     in_future: 'plugins.in_future'
 events:
     - title: "Community call"
-      start: '12 July 2020 21:00:00 GMT+5:30'
+      start: '19 July 2020 21:00:00 GMT+5:30'
       badges:
           - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=MmNkMjlubHFoODZtNmt0b25hbGlnaTZrYjIgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
             text: 'Add to calendar'
