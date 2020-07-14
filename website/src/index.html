@@ -1,5 +1,27 @@
 {% extends '.base.html' %}
 {% block content %}
+<style>
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  width: 90%%;
+  border: 1px solid black;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  border: 1px solid black;
+  width: 90%%;
+}
+</style>
 <div class='center ga-mainhead'>
   {% include 'images/.pyj.svg' %}
   <h1 style='display: inline-block;'>
@@ -13,28 +35,40 @@
   We follow this <a href='https://www.python.org/psf/conduct/'>Code of Conduct</a> at all times.
   </p>
   <p>
-  Come attend a meetup!
+  Come attend a meetup or participate in our <b><a href='https://github.com/PyJaipur/PyJaipur/issues/128'>Weekly contest</a></b> and earn yourself a prize!
   </p>
-  <h2 class='left'>To join or volunteer</h2>
-  <p>
+  <div class='collapsible'>
+  <b>Get involved</b>
+  </div>
+  <div class='content'>
   <ul class='left'>
-    <li> You can <a href='https://github.com/PyJaipur/PyJaipur/issues/new?assignees=&labels=talk&template=talk.md&title='>propose new talks</a>.</li>
-    <li> Help us with <a href='https://github.com/PyJaipur/PyJaipur/projects/2'>our volunteer tasks</a>.</li>
     <li> Join our telegram group <a href='https://t.me/PyJaipur'>@PyJaipur</a> and keep the conversation lively!</li>
+    <li> You can also <a href='https://github.com/PyJaipur/PyJaipur/issues/new?assignees=&labels=talk&template=talk.md&title='>propose new talks</a> for our monthly meetups.</li>
+    <li> Participate in our <a href='https://github.com/PyJaipur/PyJaipur/issues/128'>weekly contests</a> and win prizes!</li>
   </ul>
-  </p>
-  <h2 class='left'>To follow activities</h2>
-  <p>
+  </div>
+  <div class='collapsible'><b>Resources</b></div>
+  <div class='content'>
   <ul class='left'>
-    <li>Watch or star our <a href='https://github.com/PyJaipur/PyJaipur/'>github repo</a> to see activities.</li>
-    <li>Join our telegram group  <a href='https://t.me/pyjaipur'>@PyJaipur</a>  to see what people are talking about.</li>
-    <li> Join <a href='https://t.me/pyjaipurlinks'>@pyjaipurlinks</a> on telegram to see promotional links.  </li>
-    <li> Follow us on any of our social platforms to receive anouncements.</li>
+    <li> <a href="https://github.com/PyJaipur/PyJaipur/issues/26">Jobs and internships</a> </li>
+    <li> <a href="{{ baseurl }}/archives.html">Old Archives</a> </li>
   </ul>
-  <h2 class='left'>Threads</h2>
-  <ul class='left'>
-    <li> <a href="https://github.com/PyJaipur/PyJaipur/issues/26">Jobs/Internships</a> </li>
-    <li> <a href="{{ baseurl }}/archives.html">Archives</a> </li>
-  </ul>
+  </div>
 </div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+} 
+</script>
 {% endblock %}
