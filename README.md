@@ -61,3 +61,9 @@ Changes to this repo are done as follows:
     - Add your code to the scratch folder.
     - Open a pull request
     - Or upload your code to gist.github.com
+
+
+## Offline backups
+
+- In case github goes offline, we maintain a backup of all our issues in this repo
+- `github-backup -o .backup  --issues --issue-comments --issue-events --pulls --pull-comments --pull-details --labels --milestones  -R PyJaipur PyJaipur -t <PERSONAL_ACCESS_TOKEN>`

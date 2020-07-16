@@ -1,0 +1,128 @@
+[
+    {
+        "color": "f4bac1",
+        "default": false,
+        "description": "30 minutes talk",
+        "id": 1808867203,
+        "name": "30min",
+        "node_id": "MDU6TGFiZWwxODA4ODY3MjAz",
+        "url": "https://api.github.com/repos/PyJaipur/PyJaipur/labels/30min"
+    },
+    {
+        "color": "f4bac1",
+        "default": false,
+        "description": "50 minutes talk",
+        "id": 1808866900,
+        "name": "50min",
+        "node_id": "MDU6TGFiZWwxODA4ODY2OTAw",
+        "url": "https://api.github.com/repos/PyJaipur/PyJaipur/labels/50min"
+    },
+    {
+        "color": "f4bac1",
+        "default": false,
+        "description": "More than an hour",
+        "id": 1808869628,
+        "name": "60+min",
+        "node_id": "MDU6TGFiZWwxODA4ODY5NjI4",
+        "url": "https://api.github.com/repos/PyJaipur/PyJaipur/labels/60+min"
+    },
+    {
+        "color": "3bdb5b",
+        "default": false,
+        "description": "An event which pyjaipur is conducting/associated with",
+        "id": 1754243795,
+        "name": "Event",
+        "node_id": "MDU6TGFiZWwxNzU0MjQzNzk1",
+        "url": "https://api.github.com/repos/PyJaipur/PyJaipur/labels/Event"
+    },
+    {
+        "color": "d4c5f9",
+        "default": false,
+        "description": "",
+        "id": 2199964453,
+        "name": "Prize!",
+        "node_id": "MDU6TGFiZWwyMTk5OTY0NDUz",
+        "url": "https://api.github.com/repos/PyJaipur/PyJaipur/labels/Prize!"
+    },
+    {
+        "color": "f45a2c",
+        "default": false,
+        "description": "Talks on PyJaipur Meetup",
+        "id": 1048876293,
+        "name": "Talk",
+        "node_id": "MDU6TGFiZWwxMDQ4ODc2Mjkz",
+        "url": "https://api.github.com/repos/PyJaipur/PyJaipur/labels/Talk"
+    },
+    {
+        "color": "c2e0c6",
+        "default": false,
+        "description": "A thread of discussions around a specific topic",
+        "id": 2022118503,
+        "name": "Thread",
+        "node_id": "MDU6TGFiZWwyMDIyMTE4NTAz",
+        "url": "https://api.github.com/repos/PyJaipur/PyJaipur/labels/Thread"
+    },
+    {
+        "color": "568ebf",
+        "default": false,
+        "description": "Advanced level target audience",
+        "id": 1808867843,
+        "name": "advanced",
+        "node_id": "MDU6TGFiZWwxODA4ODY3ODQz",
+        "url": "https://api.github.com/repos/PyJaipur/PyJaipur/labels/advanced"
+    },
+    {
+        "color": "c44c58",
+        "default": false,
+        "description": "Something that has missed it's deadline",
+        "id": 1769375409,
+        "name": "backlog",
+        "node_id": "MDU6TGFiZWwxNzY5Mzc1NDA5",
+        "url": "https://api.github.com/repos/PyJaipur/PyJaipur/labels/backlog"
+    },
+    {
+        "color": "568ebf",
+        "default": false,
+        "description": "Beginner level target audience",
+        "id": 1808867455,
+        "name": "beginner",
+        "node_id": "MDU6TGFiZWwxODA4ODY3NDU1",
+        "url": "https://api.github.com/repos/PyJaipur/PyJaipur/labels/beginner"
+    },
+    {
+        "color": "008672",
+        "default": true,
+        "description": "Extra attention is needed",
+        "id": 998884162,
+        "name": "help wanted",
+        "node_id": "MDU6TGFiZWw5OTg4ODQxNjI=",
+        "url": "https://api.github.com/repos/PyJaipur/PyJaipur/labels/help%20wanted"
+    },
+    {
+        "color": "568ebf",
+        "default": false,
+        "description": "Intermediate level target audience",
+        "id": 1808867670,
+        "name": "intermediate",
+        "node_id": "MDU6TGFiZWwxODA4ODY3Njcw",
+        "url": "https://api.github.com/repos/PyJaipur/PyJaipur/labels/intermediate"
+    },
+    {
+        "color": "f4e4ad",
+        "default": false,
+        "description": "no work has to be done on this",
+        "id": 2085900124,
+        "name": "on hold",
+        "node_id": "MDU6TGFiZWwyMDg1OTAwMTI0",
+        "url": "https://api.github.com/repos/PyJaipur/PyJaipur/labels/on%20hold"
+    },
+    {
+        "color": "fef2c0",
+        "default": false,
+        "description": "Things related to the website",
+        "id": 1859694228,
+        "name": "website",
+        "node_id": "MDU6TGFiZWwxODU5Njk0MjI4",
+        "url": "https://api.github.com/repos/PyJaipur/PyJaipur/labels/website"
+    }
+]
