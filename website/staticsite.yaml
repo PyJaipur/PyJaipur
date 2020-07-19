@@ -3,6 +3,14 @@ plugins:
     in_future: 'plugins.in_future'
 events:
     - title: "Community call"
+      start: '26 July 2020 21:00:00 GMT+5:30'
+      badges:
+          - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=NnEwZHVvanJxaWtwOGNwbmxpczBuZG12OXQgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
+            text: 'Add to calendar'
+          - href: 'https://meet.google.com/qir-jyrv-apj'
+            text: 'Call'
+      desc: "We're having a community call this sunday at 9 pm! Come join the community!"
+    - title: "Community call"
       start: '19 July 2020 21:00:00 GMT+5:30'
       badges:
           - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=MmNkMjlubHFoODZtNmt0b25hbGlnaTZrYjIgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
