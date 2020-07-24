@@ -14,6 +14,7 @@
             "id": 571925918,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/14",
             "node_id": "MDEyOklzc3VlQ29tbWVudDU3MTkyNTkxOA==",
+            "performed_via_github_app": null,
             "updated_at": "2020-01-08T07:30:36Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/571925918",
             "user": {
@@ -73,6 +74,7 @@
                 "name": "meetup"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDI5MzAwNTkyMTc=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2930059217"
         },
         {
@@ -106,6 +108,7 @@
                 "name": "upcoming"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDI5MzAwNTkyMTg=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2930059218"
         },
         {
@@ -135,6 +138,7 @@
             "event": "closed",
             "id": 2930142096,
             "node_id": "MDExOkNsb3NlZEV2ZW50MjkzMDE0MjA5Ng==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2930142096"
         }
     ],
@@ -157,6 +161,7 @@
     "milestone": null,
     "node_id": "MDU6SXNzdWU1NDY2NzY2MTU=",
     "number": 14,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "closed",
     "title": "19-Jan",

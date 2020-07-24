@@ -84,7 +84,7 @@
     ],
     "author_association": "MEMBER",
     "body": "@smitjethwa and @shvamabps jab time mile yahan comment kardoge?\r\n\r\n1. How to go do this event?\r\n2. When to start?\r\n\r\n- [ ] @theSage21 Framework for setting up the contest and hosting on our site\r\n- [ ] @shvamabps @smitjethwa formulate questions for the first challenge.",
-    "closed_at": null,
+    "closed_at": "2020-07-20T10:01:43Z",
     "comment_data": [
         {
             "author_association": "NONE",
@@ -94,6 +94,7 @@
             "id": 643792369,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/102",
             "node_id": "MDEyOklzc3VlQ29tbWVudDY0Mzc5MjM2OQ==",
+            "performed_via_github_app": null,
             "updated_at": "2020-06-14T16:49:35Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/643792369",
             "user": {
@@ -125,6 +126,7 @@
             "id": 648941790,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/102",
             "node_id": "MDEyOklzc3VlQ29tbWVudDY0ODk0MTc5MA==",
+            "performed_via_github_app": null,
             "updated_at": "2020-06-24T16:57:02Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/648941790",
             "user": {
@@ -156,6 +158,7 @@
             "id": 648990176,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/102",
             "node_id": "MDEyOklzc3VlQ29tbWVudDY0ODk5MDE3Ng==",
+            "performed_via_github_app": null,
             "updated_at": "2020-06-24T18:27:16Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/648990176",
             "user": {
@@ -187,6 +190,7 @@
             "id": 648991107,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/102",
             "node_id": "MDEyOklzc3VlQ29tbWVudDY0ODk5MTEwNw==",
+            "performed_via_github_app": null,
             "updated_at": "2020-06-24T18:29:05Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/648991107",
             "user": {
@@ -218,6 +222,7 @@
             "id": 648991407,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/102",
             "node_id": "MDEyOklzc3VlQ29tbWVudDY0ODk5MTQwNw==",
+            "performed_via_github_app": null,
             "updated_at": "2020-06-24T18:29:40Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/648991407",
             "user": {
@@ -249,6 +254,7 @@
             "id": 648998019,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/102",
             "node_id": "MDEyOklzc3VlQ29tbWVudDY0ODk5ODAxOQ==",
+            "performed_via_github_app": null,
             "updated_at": "2020-06-24T18:42:29Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/648998019",
             "user": {
@@ -280,6 +286,7 @@
             "id": 650755866,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/102",
             "node_id": "MDEyOklzc3VlQ29tbWVudDY1MDc1NTg2Ng==",
+            "performed_via_github_app": null,
             "updated_at": "2020-06-28T13:20:06Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/650755866",
             "user": {
@@ -311,6 +318,7 @@
             "id": 657239815,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/102",
             "node_id": "MDEyOklzc3VlQ29tbWVudDY1NzIzOTgxNQ==",
+            "performed_via_github_app": null,
             "updated_at": "2020-07-12T15:46:31Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/657239815",
             "user": {
@@ -366,6 +374,7 @@
             "event": "mentioned",
             "id": 3441849469,
             "node_id": "MDE0Ok1lbnRpb25lZEV2ZW50MzQ0MTg0OTQ2OQ==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3441849469"
         },
         {
@@ -395,6 +404,7 @@
             "event": "subscribed",
             "id": 3441849470,
             "node_id": "MDE1OlN1YnNjcmliZWRFdmVudDM0NDE4NDk0NzA=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3441849470"
         },
         {
@@ -424,6 +434,7 @@
             "event": "mentioned",
             "id": 3441849472,
             "node_id": "MDE0Ok1lbnRpb25lZEV2ZW50MzQ0MTg0OTQ3Mg==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3441849472"
         },
         {
@@ -453,6 +464,7 @@
             "event": "subscribed",
             "id": 3441849473,
             "node_id": "MDE1OlN1YnNjcmliZWRFdmVudDM0NDE4NDk0NzM=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3441849473"
         },
         {
@@ -482,6 +494,7 @@
             "event": "mentioned",
             "id": 3478765208,
             "node_id": "MDE0Ok1lbnRpb25lZEV2ZW50MzQ3ODc2NTIwOA==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3478765208"
         },
         {
@@ -511,6 +524,7 @@
             "event": "subscribed",
             "id": 3478765210,
             "node_id": "MDE1OlN1YnNjcmliZWRFdmVudDM0Nzg3NjUyMTA=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3478765210"
         },
         {
@@ -540,6 +554,7 @@
             "event": "mentioned",
             "id": 3478773745,
             "node_id": "MDE0Ok1lbnRpb25lZEV2ZW50MzQ3ODc3Mzc0NQ==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3478773745"
         },
         {
@@ -569,6 +584,7 @@
             "event": "subscribed",
             "id": 3478773747,
             "node_id": "MDE1OlN1YnNjcmliZWRFdmVudDM0Nzg3NzM3NDc=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3478773747"
         },
         {
@@ -598,6 +614,7 @@
             "event": "mentioned",
             "id": 3478812098,
             "node_id": "MDE0Ok1lbnRpb25lZEV2ZW50MzQ3ODgxMjA5OA==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3478812098"
         },
         {
@@ -627,6 +644,7 @@
             "event": "subscribed",
             "id": 3478812102,
             "node_id": "MDE1OlN1YnNjcmliZWRFdmVudDM0Nzg4MTIxMDI=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3478812102"
         },
         {
@@ -696,6 +714,7 @@
             "event": "assigned",
             "id": 3478813606,
             "node_id": "MDEzOkFzc2lnbmVkRXZlbnQzNDc4ODEzNjA2",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3478813606"
         },
         {
@@ -765,6 +784,7 @@
             "event": "assigned",
             "id": 3478813611,
             "node_id": "MDEzOkFzc2lnbmVkRXZlbnQzNDc4ODEzNjEx",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3478813611"
         },
         {
@@ -834,6 +854,7 @@
             "event": "assigned",
             "id": 3478813613,
             "node_id": "MDEzOkFzc2lnbmVkRXZlbnQzNDc4ODEzNjEz",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3478813613"
         },
         {
@@ -903,6 +924,7 @@
             "event": "unassigned",
             "id": 3478817847,
             "node_id": "MDE1OlVuYXNzaWduZWRFdmVudDM0Nzg4MTc4NDc=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3478817847"
         },
         {
@@ -972,6 +994,7 @@
             "event": "assigned",
             "id": 3480418360,
             "node_id": "MDEzOkFzc2lnbmVkRXZlbnQzNDgwNDE4MzYw",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3480418360"
         },
         {
@@ -1001,6 +1024,7 @@
             "event": "mentioned",
             "id": 3490244256,
             "node_id": "MDE0Ok1lbnRpb25lZEV2ZW50MzQ5MDI0NDI1Ng==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3490244256"
         },
         {
@@ -1030,6 +1054,7 @@
             "event": "subscribed",
             "id": 3490244259,
             "node_id": "MDE1OlN1YnNjcmliZWRFdmVudDM0OTAyNDQyNTk=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3490244259"
         },
         {
@@ -1059,6 +1084,7 @@
             "event": "unsubscribed",
             "id": 3501965828,
             "node_id": "MDE3OlVuc3Vic2NyaWJlZEV2ZW50MzUwMTk2NTgyOA==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3501965828"
         },
         {
@@ -1088,6 +1114,7 @@
             "event": "subscribed",
             "id": 3501965889,
             "node_id": "MDE1OlN1YnNjcmliZWRFdmVudDM1MDE5NjU4ODk=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3501965889"
         },
         {
@@ -1117,6 +1144,7 @@
             "event": "mentioned",
             "id": 3537211614,
             "node_id": "MDE0Ok1lbnRpb25lZEV2ZW50MzUzNzIxMTYxNA==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3537211614"
         },
         {
@@ -1146,7 +1174,38 @@
             "event": "subscribed",
             "id": 3537211615,
             "node_id": "MDE1OlN1YnNjcmliZWRFdmVudDM1MzcyMTE2MTU=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3537211615"
+        },
+        {
+            "actor": {
+                "avatar_url": "https://avatars3.githubusercontent.com/u/7693265?v=4",
+                "events_url": "https://api.github.com/users/theSage21/events{/privacy}",
+                "followers_url": "https://api.github.com/users/theSage21/followers",
+                "following_url": "https://api.github.com/users/theSage21/following{/other_user}",
+                "gists_url": "https://api.github.com/users/theSage21/gists{/gist_id}",
+                "gravatar_id": "",
+                "html_url": "https://github.com/theSage21",
+                "id": 7693265,
+                "login": "theSage21",
+                "node_id": "MDQ6VXNlcjc2OTMyNjU=",
+                "organizations_url": "https://api.github.com/users/theSage21/orgs",
+                "received_events_url": "https://api.github.com/users/theSage21/received_events",
+                "repos_url": "https://api.github.com/users/theSage21/repos",
+                "site_admin": false,
+                "starred_url": "https://api.github.com/users/theSage21/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/theSage21/subscriptions",
+                "type": "User",
+                "url": "https://api.github.com/users/theSage21"
+            },
+            "commit_id": null,
+            "commit_url": null,
+            "created_at": "2020-07-20T10:01:43Z",
+            "event": "closed",
+            "id": 3564990330,
+            "node_id": "MDExOkNsb3NlZEV2ZW50MzU2NDk5MDMzMA==",
+            "performed_via_github_app": null,
+            "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3564990330"
         }
     ],
     "events_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/102/events",
@@ -1158,10 +1217,11 @@
     "milestone": null,
     "node_id": "MDU6SXNzdWU2MzgzNzk5NjQ=",
     "number": 102,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
-    "state": "open",
+    "state": "closed",
     "title": "Python coding challenge give aways",
-    "updated_at": "2020-07-12T15:46:31Z",
+    "updated_at": "2020-07-20T10:01:43Z",
     "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/102",
     "user": {
         "avatar_url": "https://avatars3.githubusercontent.com/u/7693265?v=4",

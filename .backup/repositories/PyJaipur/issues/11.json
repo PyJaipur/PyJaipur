@@ -41,6 +41,7 @@
                 "name": "Talks"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDI5MjI0MDU4Njc=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2922405867"
         },
         {
@@ -74,6 +75,7 @@
                 "name": "upcoming"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDI5MjI0MDU4Njg=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2922405868"
         },
         {
@@ -106,6 +108,7 @@
                 "title": "Jan Meetup"
             },
             "node_id": "MDE1Ok1pbGVzdG9uZWRFdmVudDI5MjI0MDU4NzA=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2922405870"
         },
         {
@@ -135,6 +138,7 @@
             "event": "renamed",
             "id": 2930005153,
             "node_id": "MDE3OlJlbmFtZWRUaXRsZUV2ZW50MjkzMDAwNTE1Mw==",
+            "performed_via_github_app": null,
             "rename": {
                 "from": "So Wrong: Absurd ways of doing perfectly normal things",
                 "to": "So Wrong: The strange parts of Python"
@@ -171,6 +175,7 @@
                 "title": "Jan Meetup"
             },
             "node_id": "MDE3OkRlbWlsZXN0b25lZEV2ZW50Mjk3OTY2NzY4MQ==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2979667681"
         },
         {
@@ -204,6 +209,7 @@
                 "name": "30min"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDI5Nzk2NzI2NzA=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2979672670"
         },
         {
@@ -237,6 +243,7 @@
                 "name": "intermediate"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDI5Nzk2NzI2NzE=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2979672671"
         },
         {
@@ -270,6 +277,7 @@
                 "name": "upcoming"
             },
             "node_id": "MDE0OlVubGFiZWxlZEV2ZW50Mjk5NjY3MTE0OQ==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2996671149"
         },
         {
@@ -299,6 +307,7 @@
             "event": "added_to_project",
             "id": 3344211325,
             "node_id": "MDE5OkFkZGVkVG9Qcm9qZWN0RXZlbnQzMzQ0MjExMzI1",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3344211325"
         }
     ],
@@ -339,6 +348,7 @@
     "milestone": null,
     "node_id": "MDU6SXNzdWU1NDU0MDQ2MzY=",
     "number": 11,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "open",
     "title": "So Wrong: The strange parts of Python",

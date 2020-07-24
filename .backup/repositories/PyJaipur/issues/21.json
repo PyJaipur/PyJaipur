@@ -14,6 +14,7 @@
             "id": 588932749,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/21",
             "node_id": "MDEyOklzc3VlQ29tbWVudDU4ODkzMjc0OQ==",
+            "performed_via_github_app": null,
             "updated_at": "2020-02-20T10:39:24Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/588932749",
             "user": {
@@ -45,6 +46,7 @@
             "id": 589969758,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/21",
             "node_id": "MDEyOklzc3VlQ29tbWVudDU4OTk2OTc1OA==",
+            "performed_via_github_app": null,
             "updated_at": "2020-02-22T16:01:59Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/589969758",
             "user": {
@@ -104,6 +106,7 @@
                 "name": "website"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDMwNTUzMjY4Nzc=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3055326877"
         },
         {
@@ -133,6 +136,7 @@
             "event": "closed",
             "id": 3062809962,
             "node_id": "MDExOkNsb3NlZEV2ZW50MzA2MjgwOTk2Mg==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3062809962"
         }
     ],
@@ -155,6 +159,7 @@
     "milestone": null,
     "node_id": "MDU6SXNzdWU1NjgyMDQwMzc=",
     "number": 21,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "closed",
     "title": "Shouldn't we have a seprate repository for website",

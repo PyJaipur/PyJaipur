@@ -37,6 +37,7 @@
             "event": "pinned",
             "id": 3465228299,
             "node_id": "MDExOlBpbm5lZEV2ZW50MzQ2NTIyODI5OQ==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3465228299"
         },
         {
@@ -70,6 +71,7 @@
                 "name": "Thread"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDM0NjUyMjgzNjU=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3465228365"
         },
         {
@@ -99,6 +101,7 @@
             "event": "added_to_project",
             "id": 3465228835,
             "node_id": "MDE5OkFkZGVkVG9Qcm9qZWN0RXZlbnQzNDY1MjI4ODM1",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3465228835"
         }
     ],
@@ -121,6 +124,7 @@
     "milestone": null,
     "node_id": "MDU6SXNzdWU2NDI1MDAyNjk=",
     "number": 109,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "open",
     "title": "Code of conduct",

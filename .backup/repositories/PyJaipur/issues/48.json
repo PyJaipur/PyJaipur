@@ -14,6 +14,7 @@
             "id": 622987792,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/48",
             "node_id": "MDEyOklzc3VlQ29tbWVudDYyMjk4Nzc5Mg==",
+            "performed_via_github_app": null,
             "updated_at": "2020-05-02T17:30:24Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/622987792",
             "user": {
@@ -45,6 +46,7 @@
             "id": 622988297,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/48",
             "node_id": "MDEyOklzc3VlQ29tbWVudDYyMjk4ODI5Nw==",
+            "performed_via_github_app": null,
             "updated_at": "2020-05-02T17:34:32Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/622988297",
             "user": {
@@ -76,6 +78,7 @@
             "id": 622989295,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/48",
             "node_id": "MDEyOklzc3VlQ29tbWVudDYyMjk4OTI5NQ==",
+            "performed_via_github_app": null,
             "updated_at": "2020-05-02T17:41:47Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/622989295",
             "user": {
@@ -107,6 +110,7 @@
             "id": 622992621,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/48",
             "node_id": "MDEyOklzc3VlQ29tbWVudDYyMjk5MjYyMQ==",
+            "performed_via_github_app": null,
             "updated_at": "2020-05-02T18:06:46Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/622992621",
             "user": {
@@ -162,6 +166,7 @@
             "event": "closed",
             "id": 3297093051,
             "node_id": "MDExOkNsb3NlZEV2ZW50MzI5NzA5MzA1MQ==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3297093051"
         }
     ],
@@ -174,6 +179,7 @@
     "milestone": null,
     "node_id": "MDU6SXNzdWU2MTEyMjA1OTU=",
     "number": 48,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "closed",
     "title": "How to run website?",

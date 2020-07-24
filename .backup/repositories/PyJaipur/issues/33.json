@@ -14,6 +14,7 @@
             "id": 613296965,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/33",
             "node_id": "MDEyOklzc3VlQ29tbWVudDYxMzI5Njk2NQ==",
+            "performed_via_github_app": null,
             "updated_at": "2020-04-14T08:20:35Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/613296965",
             "user": {
@@ -45,6 +46,7 @@
             "id": 613297907,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/33",
             "node_id": "MDEyOklzc3VlQ29tbWVudDYxMzI5NzkwNw==",
+            "performed_via_github_app": null,
             "updated_at": "2020-04-14T08:22:29Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/613297907",
             "user": {
@@ -104,6 +106,7 @@
                 "name": "beginner"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDMyMjk5NjkwNzg=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3229969078"
         },
         {
@@ -137,6 +140,7 @@
                 "name": "60+min"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDMyMjk5NjkwNzk=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3229969079"
         },
         {
@@ -170,6 +174,7 @@
                 "name": "speaker required"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDMyMjk5NjkwODE=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3229969081"
         },
         {
@@ -199,6 +204,7 @@
             "event": "closed",
             "id": 3257525119,
             "node_id": "MDExOkNsb3NlZEV2ZW50MzI1NzUyNTExOQ==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3257525119"
         }
     ],
@@ -230,6 +236,7 @@
     "milestone": null,
     "node_id": "MDU6SXNzdWU1OTkzNzg2MjM=",
     "number": 33,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "closed",
     "title": "Requesting a call on fundamentals of Linux",

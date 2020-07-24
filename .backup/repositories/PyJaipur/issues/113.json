@@ -14,6 +14,7 @@
             "id": 648008920,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/113",
             "node_id": "MDEyOklzc3VlQ29tbWVudDY0ODAwODkyMA==",
+            "performed_via_github_app": null,
             "updated_at": "2020-06-23T08:59:13Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/648008920",
             "user": {
@@ -73,6 +74,7 @@
                 "name": "30min"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDM0NzE4ODA3Njg=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3471880768"
         },
         {
@@ -106,6 +108,7 @@
                 "name": "beginner"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDM0NzE4ODA3NzA=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3471880770"
         },
         {
@@ -139,6 +142,7 @@
                 "name": "Talk"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDM0NzE4ODA3NzI=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3471880772"
         },
         {
@@ -168,6 +172,7 @@
             "event": "added_to_project",
             "id": 3471881013,
             "node_id": "MDE5OkFkZGVkVG9Qcm9qZWN0RXZlbnQzNDcxODgxMDEz",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3471881013"
         },
         {
@@ -200,6 +205,7 @@
                 "title": "June meetup"
             },
             "node_id": "MDE1Ok1pbGVzdG9uZWRFdmVudDM0NzE4ODEyNTc=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3471881257"
         },
         {
@@ -229,6 +235,7 @@
             "event": "moved_columns_in_project",
             "id": 3471898286,
             "node_id": "MDI2Ok1vdmVkQ29sdW1uc0luUHJvamVjdEV2ZW50MzQ3MTg5ODI4Ng==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3471898286"
         },
         {
@@ -258,6 +265,7 @@
             "event": "mentioned",
             "id": 3471900134,
             "node_id": "MDE0Ok1lbnRpb25lZEV2ZW50MzQ3MTkwMDEzNA==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3471900134"
         },
         {
@@ -287,6 +295,7 @@
             "event": "subscribed",
             "id": 3471900142,
             "node_id": "MDE1OlN1YnNjcmliZWRFdmVudDM0NzE5MDAxNDI=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3471900142"
         },
         {
@@ -316,6 +325,7 @@
             "event": "closed",
             "id": 3488736716,
             "node_id": "MDExOkNsb3NlZEV2ZW50MzQ4ODczNjcxNg==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3488736716"
         },
         {
@@ -345,6 +355,7 @@
             "event": "moved_columns_in_project",
             "id": 3488736721,
             "node_id": "MDI2Ok1vdmVkQ29sdW1uc0luUHJvamVjdEV2ZW50MzQ4ODczNjcyMQ==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3488736721"
         }
     ],
@@ -421,6 +432,7 @@
     },
     "node_id": "MDU6SXNzdWU2NDM2NDI4MzI=",
     "number": 113,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "closed",
     "title": "A talk on APIs (Application Programming Interfaces)",

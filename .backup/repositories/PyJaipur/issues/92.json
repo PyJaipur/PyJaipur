@@ -14,6 +14,7 @@
             "id": 640241551,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/92",
             "node_id": "MDEyOklzc3VlQ29tbWVudDY0MDI0MTU1MQ==",
+            "performed_via_github_app": null,
             "updated_at": "2020-06-07T16:09:34Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/640241551",
             "user": {
@@ -69,6 +70,7 @@
             "event": "added_to_project",
             "id": 3392530976,
             "node_id": "MDE5OkFkZGVkVG9Qcm9qZWN0RXZlbnQzMzkyNTMwOTc2",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3392530976"
         },
         {
@@ -98,6 +100,7 @@
             "event": "moved_columns_in_project",
             "id": 3392532132,
             "node_id": "MDI2Ok1vdmVkQ29sdW1uc0luUHJvamVjdEV2ZW50MzM5MjUzMjEzMg==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3392532132"
         },
         {
@@ -131,6 +134,7 @@
                 "name": "Event"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDMzOTI1NDAyMzE=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3392540231"
         },
         {
@@ -163,6 +167,7 @@
                 "title": "June meetup"
             },
             "node_id": "MDE1Ok1pbGVzdG9uZWRFdmVudDM0NDE4NTYzNjg=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3441856368"
         },
         {
@@ -192,6 +197,7 @@
             "event": "closed",
             "id": 3488735183,
             "node_id": "MDExOkNsb3NlZEV2ZW50MzQ4ODczNTE4Mw==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3488735183"
         },
         {
@@ -221,6 +227,7 @@
             "event": "moved_columns_in_project",
             "id": 3488735185,
             "node_id": "MDI2Ok1vdmVkQ29sdW1uc0luUHJvamVjdEV2ZW50MzQ4ODczNTE4NQ==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3488735185"
         }
     ],
@@ -279,6 +286,7 @@
     },
     "node_id": "MDU6SXNzdWU2MjgzMzE0ODQ=",
     "number": 92,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "closed",
     "title": "June meetup",

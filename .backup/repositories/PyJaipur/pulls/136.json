@@ -1,74 +1,34 @@
 {
     "_links": {
         "comments": {
-            "href": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/96/comments"
+            "href": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/136/comments"
         },
         "commits": {
-            "href": "https://api.github.com/repos/PyJaipur/PyJaipur/pulls/96/commits"
+            "href": "https://api.github.com/repos/PyJaipur/PyJaipur/pulls/136/commits"
         },
         "html": {
-            "href": "https://github.com/PyJaipur/PyJaipur/pull/96"
+            "href": "https://github.com/PyJaipur/PyJaipur/pull/136"
         },
         "issue": {
-            "href": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/96"
+            "href": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/136"
         },
         "review_comment": {
             "href": "https://api.github.com/repos/PyJaipur/PyJaipur/pulls/comments{/number}"
         },
         "review_comments": {
-            "href": "https://api.github.com/repos/PyJaipur/PyJaipur/pulls/96/comments"
+            "href": "https://api.github.com/repos/PyJaipur/PyJaipur/pulls/136/comments"
         },
         "self": {
-            "href": "https://api.github.com/repos/PyJaipur/PyJaipur/pulls/96"
+            "href": "https://api.github.com/repos/PyJaipur/PyJaipur/pulls/136"
         },
         "statuses": {
-            "href": "https://api.github.com/repos/PyJaipur/PyJaipur/statuses/57670b84af3575b78ef53f954986f452733e0eb7"
+            "href": "https://api.github.com/repos/PyJaipur/PyJaipur/statuses/1c8fc138e190207670c07442c13d9232c56fa505"
         }
     },
     "active_lock_reason": null,
     "additions": 8,
-    "assignee": {
-        "avatar_url": "https://avatars3.githubusercontent.com/u/7693265?v=4",
-        "events_url": "https://api.github.com/users/theSage21/events{/privacy}",
-        "followers_url": "https://api.github.com/users/theSage21/followers",
-        "following_url": "https://api.github.com/users/theSage21/following{/other_user}",
-        "gists_url": "https://api.github.com/users/theSage21/gists{/gist_id}",
-        "gravatar_id": "",
-        "html_url": "https://github.com/theSage21",
-        "id": 7693265,
-        "login": "theSage21",
-        "node_id": "MDQ6VXNlcjc2OTMyNjU=",
-        "organizations_url": "https://api.github.com/users/theSage21/orgs",
-        "received_events_url": "https://api.github.com/users/theSage21/received_events",
-        "repos_url": "https://api.github.com/users/theSage21/repos",
-        "site_admin": false,
-        "starred_url": "https://api.github.com/users/theSage21/starred{/owner}{/repo}",
-        "subscriptions_url": "https://api.github.com/users/theSage21/subscriptions",
-        "type": "User",
-        "url": "https://api.github.com/users/theSage21"
-    },
-    "assignees": [
-        {
-            "avatar_url": "https://avatars3.githubusercontent.com/u/7693265?v=4",
-            "events_url": "https://api.github.com/users/theSage21/events{/privacy}",
-            "followers_url": "https://api.github.com/users/theSage21/followers",
-            "following_url": "https://api.github.com/users/theSage21/following{/other_user}",
-            "gists_url": "https://api.github.com/users/theSage21/gists{/gist_id}",
-            "gravatar_id": "",
-            "html_url": "https://github.com/theSage21",
-            "id": 7693265,
-            "login": "theSage21",
-            "node_id": "MDQ6VXNlcjc2OTMyNjU=",
-            "organizations_url": "https://api.github.com/users/theSage21/orgs",
-            "received_events_url": "https://api.github.com/users/theSage21/received_events",
-            "repos_url": "https://api.github.com/users/theSage21/repos",
-            "site_admin": false,
-            "starred_url": "https://api.github.com/users/theSage21/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/theSage21/subscriptions",
-            "type": "User",
-            "url": "https://api.github.com/users/theSage21"
-        }
-    ],
+    "assignee": null,
+    "assignees": [],
     "author_association": "MEMBER",
     "base": {
         "label": "PyJaipur:master",
@@ -167,7 +127,7 @@
             "watchers": 4,
             "watchers_count": 4
         },
-        "sha": "5d47467da378b6ccc66fb88a9a9f0203f7bdff00",
+        "sha": "af0f683057a6ca161d352a5c2334eefa89627770",
         "user": {
             "avatar_url": "https://avatars3.githubusercontent.com/u/40336081?v=4",
             "events_url": "https://api.github.com/users/PyJaipur/events{/privacy}",
@@ -189,21 +149,21 @@
             "url": "https://api.github.com/users/PyJaipur"
         }
     },
-    "body": "",
-    "changed_files": 4,
-    "closed_at": "2020-06-05T08:30:16Z",
+    "body": "# #135",
+    "changed_files": 1,
+    "closed_at": "2020-07-24T05:32:24Z",
     "comment_data": [],
     "comments": 0,
-    "comments_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/96/comments",
+    "comments_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/136/comments",
     "commits": 1,
-    "commits_url": "https://api.github.com/repos/PyJaipur/PyJaipur/pulls/96/commits",
-    "created_at": "2020-06-05T08:29:09Z",
-    "deletions": 8,
-    "diff_url": "https://github.com/PyJaipur/PyJaipur/pull/96.diff",
+    "commits_url": "https://api.github.com/repos/PyJaipur/PyJaipur/pulls/136/commits",
+    "created_at": "2020-07-24T05:22:51Z",
+    "deletions": 0,
+    "diff_url": "https://github.com/PyJaipur/PyJaipur/pull/136.diff",
     "draft": false,
     "head": {
-        "label": "theSage21:event_fyx",
-        "ref": "event_fyx",
+        "label": "theSage21:master",
+        "ref": "master",
         "repo": {
             "archive_url": "https://api.github.com/repos/theSage21/PyJaipur/{archive_format}{/ref}",
             "archived": false,
@@ -298,7 +258,7 @@
             "watchers": 0,
             "watchers_count": 0
         },
-        "sha": "57670b84af3575b78ef53f954986f452733e0eb7",
+        "sha": "1c8fc138e190207670c07442c13d9232c56fa505",
         "user": {
             "avatar_url": "https://avatars3.githubusercontent.com/u/7693265?v=4",
             "events_url": "https://api.github.com/users/theSage21/events{/privacy}",
@@ -320,17 +280,17 @@
             "url": "https://api.github.com/users/theSage21"
         }
     },
-    "html_url": "https://github.com/PyJaipur/PyJaipur/pull/96",
-    "id": 428303896,
-    "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/96",
+    "html_url": "https://github.com/PyJaipur/PyJaipur/pull/136",
+    "id": 456082428,
+    "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/136",
     "labels": [],
     "locked": false,
     "maintainer_can_modify": false,
-    "merge_commit_sha": "bdf79bba3073b605dbc868a9f39e66961407d5d1",
+    "merge_commit_sha": "6300c2e60305f8f8ae6f6315f15cbac793264c69",
     "mergeable": null,
     "mergeable_state": "unknown",
     "merged": true,
-    "merged_at": "2020-06-05T08:30:16Z",
+    "merged_at": "2020-07-24T05:32:24Z",
     "merged_by": {
         "avatar_url": "https://avatars3.githubusercontent.com/u/7693265?v=4",
         "events_url": "https://api.github.com/users/theSage21/events{/privacy}",
@@ -352,20 +312,20 @@
         "url": "https://api.github.com/users/theSage21"
     },
     "milestone": null,
-    "node_id": "MDExOlB1bGxSZXF1ZXN0NDI4MzAzODk2",
-    "number": 96,
-    "patch_url": "https://github.com/PyJaipur/PyJaipur/pull/96.patch",
+    "node_id": "MDExOlB1bGxSZXF1ZXN0NDU2MDgyNDI4",
+    "number": 136,
+    "patch_url": "https://github.com/PyJaipur/PyJaipur/pull/136.patch",
     "rebaseable": null,
     "requested_reviewers": [],
     "requested_teams": [],
     "review_comment_url": "https://api.github.com/repos/PyJaipur/PyJaipur/pulls/comments{/number}",
     "review_comments": 0,
-    "review_comments_url": "https://api.github.com/repos/PyJaipur/PyJaipur/pulls/96/comments",
+    "review_comments_url": "https://api.github.com/repos/PyJaipur/PyJaipur/pulls/136/comments",
     "state": "closed",
-    "statuses_url": "https://api.github.com/repos/PyJaipur/PyJaipur/statuses/57670b84af3575b78ef53f954986f452733e0eb7",
-    "title": "event fyx",
-    "updated_at": "2020-06-05T08:30:16Z",
-    "url": "https://api.github.com/repos/PyJaipur/PyJaipur/pulls/96",
+    "statuses_url": "https://api.github.com/repos/PyJaipur/PyJaipur/statuses/1c8fc138e190207670c07442c13d9232c56fa505",
+    "title": "july meetup",
+    "updated_at": "2020-07-24T05:32:24Z",
+    "url": "https://api.github.com/repos/PyJaipur/PyJaipur/pulls/136",
     "user": {
         "avatar_url": "https://avatars3.githubusercontent.com/u/7693265?v=4",
         "events_url": "https://api.github.com/users/theSage21/events{/privacy}",

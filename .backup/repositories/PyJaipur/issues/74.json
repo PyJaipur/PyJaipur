@@ -54,6 +54,7 @@
             "id": 633604757,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/74",
             "node_id": "MDEyOklzc3VlQ29tbWVudDYzMzYwNDc1Nw==",
+            "performed_via_github_app": null,
             "updated_at": "2020-05-25T14:43:31Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/633604757",
             "user": {
@@ -109,6 +110,7 @@
             "event": "added_to_project",
             "id": 3355657915,
             "node_id": "MDE5OkFkZGVkVG9Qcm9qZWN0RXZlbnQzMzU1NjU3OTE1",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3355657915"
         },
         {
@@ -138,6 +140,7 @@
             "event": "renamed",
             "id": 3361473616,
             "node_id": "MDE3OlJlbmFtZWRUaXRsZUV2ZW50MzM2MTQ3MzYxNg==",
+            "performed_via_github_app": null,
             "rename": {
                 "from": "Higher frequencies for meetups. Weekly?",
                 "to": "Sunday night as volunteer meetup"
@@ -211,6 +214,7 @@
             "event": "assigned",
             "id": 3361473956,
             "node_id": "MDEzOkFzc2lnbmVkRXZlbnQzMzYxNDczOTU2",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3361473956"
         },
         {
@@ -240,6 +244,7 @@
             "event": "renamed",
             "id": 3361474709,
             "node_id": "MDE3OlJlbmFtZWRUaXRsZUV2ZW50MzM2MTQ3NDcwOQ==",
+            "performed_via_github_app": null,
             "rename": {
                 "from": "Sunday night as volunteer meetup",
                 "to": "Sunday night as a regular volunteer meetup"
@@ -273,6 +278,7 @@
             "event": "moved_columns_in_project",
             "id": 3361475133,
             "node_id": "MDI2Ok1vdmVkQ29sdW1uc0luUHJvamVjdEV2ZW50MzM2MTQ3NTEzMw==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3361475133"
         },
         {
@@ -302,6 +308,7 @@
             "event": "marked_as_duplicate",
             "id": 3370506362,
             "node_id": "MDIyOk1hcmtlZEFzRHVwbGljYXRlRXZlbnQzMzcwNTA2MzYy",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3370506362"
         },
         {
@@ -331,6 +338,7 @@
             "event": "closed",
             "id": 3370506572,
             "node_id": "MDExOkNsb3NlZEV2ZW50MzM3MDUwNjU3Mg==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3370506572"
         },
         {
@@ -360,6 +368,7 @@
             "event": "moved_columns_in_project",
             "id": 3370506602,
             "node_id": "MDI2Ok1vdmVkQ29sdW1uc0luUHJvamVjdEV2ZW50MzM3MDUwNjYwMg==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3370506602"
         }
     ],
@@ -372,6 +381,7 @@
     "milestone": null,
     "node_id": "MDU6SXNzdWU2MTk2MjQ2ODI=",
     "number": 74,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "closed",
     "title": "Sunday night as a regular volunteer meetup",

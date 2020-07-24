@@ -3,12 +3,12 @@
     "assignee": null,
     "assignees": [],
     "author_association": "MEMBER",
-    "body": "Meetup slot.\r\n\r\nTiming: 1000 hrs - 1300 hrs\r\nLocation : TBD",
-    "closed_at": "2020-01-08T08:19:24Z",
+    "body": "## Announcement message\r\n\r\n    This month we're working on how to deploy machine learning models and GPT-3. Come attend!\r\n    Use pyjaipur.org/#call to join the event.\r\n    #pyjaipur #event\r\n\r\n## Announcement poster\r\n\r\n## Checklist\r\n\r\n- [x] Add announcement message on this issue\r\n- [x] Google calendar event on pyj calendar\r\n    - [x] Add announce message\r\n    - [x] Create a meeting link using meet.google or jitsi\r\n- [x] pyjaipur.org\r\n    - [x] Date and time of starting\r\n    - [x] Short description\r\n    - [x] Google calendar link\r\n    - [x] Call link from calendar\r\n    - [ ] Github link if applicable\r\n- [x] Make event poster.\r\n- [x] Update relevant talk/management issues.\r\n- [x] meetup\r\n    - [x] Create draft for event\r\n    - [x] Add poster\r\n    - [x] Add announce message\r\n    - [x] Publish and announce\r\n- [x] linkedin\r\n    - [x] Create event\r\n    - [x] Add poster\r\n    - [x] Add announce message\r\n- [x] twitter\r\n    - [x] Add poster\r\n    - [x] Quick details\r\n    - [x] Link to calendar event\r\n    - [x] Link to call\r\n- [ ] telegram\r\n    - [ ] Event poster \r\n    - [ ] Quick details\r\n    - [ ] Link to calendar event\r\n    - [ ] Announce on:\r\n        - [ ] pyjaipur\r\n        - [ ] ilugd\r\n- [ ] mailing list\r\n    - [ ] Add poster\r\n    - [ ] Add announce message\r\n    - [ ] Link to calendar event\r\n    - [ ] Announce on:\r\n        - [ ] pyj\r\n        - [ ] ilugd\r\n- [ ] youtube\r\n    - [ ] Create a live stream event\r\n    - [ ] Add poster\r\n    - [ ] Add announce message\r\n",
+    "closed_at": null,
     "comment_data": [],
     "comments": 0,
-    "comments_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/15/comments",
-    "created_at": "2020-01-08T06:49:13Z",
+    "comments_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/135/comments",
+    "created_at": "2020-07-24T05:21:21Z",
     "event_data": [
         {
             "actor": {
@@ -33,16 +33,16 @@
             },
             "commit_id": null,
             "commit_url": null,
-            "created_at": "2020-01-08T06:49:13Z",
+            "created_at": "2020-07-24T05:21:21Z",
             "event": "labeled",
-            "id": 2930059889,
+            "id": 3582588786,
             "label": {
                 "color": "3bdb5b",
-                "name": "meetup"
+                "name": "Event"
             },
-            "node_id": "MDEyOkxhYmVsZWRFdmVudDI5MzAwNTk4ODk=",
+            "node_id": "MDEyOkxhYmVsZWRFdmVudDM1ODI1ODg3ODY=",
             "performed_via_github_app": null,
-            "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2930059889"
+            "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3582588786"
         },
         {
             "actor": {
@@ -67,51 +67,17 @@
             },
             "commit_id": null,
             "commit_url": null,
-            "created_at": "2020-01-08T06:49:13Z",
-            "event": "labeled",
-            "id": 2930059892,
-            "label": {
-                "color": "bcd0f4",
-                "name": "upcoming"
-            },
-            "node_id": "MDEyOkxhYmVsZWRFdmVudDI5MzAwNTk4OTI=",
+            "created_at": "2020-07-24T05:21:27Z",
+            "event": "added_to_project",
+            "id": 3582588938,
+            "node_id": "MDE5OkFkZGVkVG9Qcm9qZWN0RXZlbnQzNTgyNTg4OTM4",
             "performed_via_github_app": null,
-            "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2930059892"
-        },
-        {
-            "actor": {
-                "avatar_url": "https://avatars3.githubusercontent.com/u/7693265?v=4",
-                "events_url": "https://api.github.com/users/theSage21/events{/privacy}",
-                "followers_url": "https://api.github.com/users/theSage21/followers",
-                "following_url": "https://api.github.com/users/theSage21/following{/other_user}",
-                "gists_url": "https://api.github.com/users/theSage21/gists{/gist_id}",
-                "gravatar_id": "",
-                "html_url": "https://github.com/theSage21",
-                "id": 7693265,
-                "login": "theSage21",
-                "node_id": "MDQ6VXNlcjc2OTMyNjU=",
-                "organizations_url": "https://api.github.com/users/theSage21/orgs",
-                "received_events_url": "https://api.github.com/users/theSage21/received_events",
-                "repos_url": "https://api.github.com/users/theSage21/repos",
-                "site_admin": false,
-                "starred_url": "https://api.github.com/users/theSage21/starred{/owner}{/repo}",
-                "subscriptions_url": "https://api.github.com/users/theSage21/subscriptions",
-                "type": "User",
-                "url": "https://api.github.com/users/theSage21"
-            },
-            "commit_id": null,
-            "commit_url": null,
-            "created_at": "2020-01-08T08:19:24Z",
-            "event": "closed",
-            "id": 2930250311,
-            "node_id": "MDExOkNsb3NlZEV2ZW50MjkzMDI1MDMxMQ==",
-            "performed_via_github_app": null,
-            "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2930250311"
+            "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3582588938"
         }
     ],
-    "events_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/15/events",
-    "html_url": "https://github.com/PyJaipur/PyJaipur/issues/15",
-    "id": 546676744,
+    "events_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/135/events",
+    "html_url": "https://github.com/PyJaipur/PyJaipur/issues/135",
+    "id": 664923619,
     "labels": [
         {
             "color": "3bdb5b",
@@ -123,17 +89,17 @@
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/labels/Event"
         }
     ],
-    "labels_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/15/labels{/name}",
+    "labels_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/135/labels{/name}",
     "locked": false,
     "milestone": null,
-    "node_id": "MDU6SXNzdWU1NDY2NzY3NDQ=",
-    "number": 15,
+    "node_id": "MDU6SXNzdWU2NjQ5MjM2MTk=",
+    "number": 135,
     "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
-    "state": "closed",
-    "title": "25-Jan",
-    "updated_at": "2020-01-08T08:19:24Z",
-    "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/15",
+    "state": "open",
+    "title": "July meetup",
+    "updated_at": "2020-07-24T05:33:41Z",
+    "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/135",
     "user": {
         "avatar_url": "https://avatars3.githubusercontent.com/u/7693265?v=4",
         "events_url": "https://api.github.com/users/theSage21/events{/privacy}",

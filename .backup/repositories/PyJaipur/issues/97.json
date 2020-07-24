@@ -37,6 +37,7 @@
             "event": "added_to_project",
             "id": 3416734844,
             "node_id": "MDE5OkFkZGVkVG9Qcm9qZWN0RXZlbnQzNDE2NzM0ODQ0",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3416734844"
         },
         {
@@ -70,6 +71,7 @@
                 "name": "help wanted"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDM0NDE3OTg4MTY=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3441798816"
         }
     ],
@@ -92,6 +94,7 @@
     "milestone": null,
     "node_id": "MDU6SXNzdWU2MzM1MjgwMDg=",
     "number": 97,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "open",
     "title": "Complain bot",

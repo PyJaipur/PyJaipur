@@ -117,6 +117,7 @@
             "event": "assigned",
             "id": 3317802277,
             "node_id": "MDEzOkFzc2lnbmVkRXZlbnQzMzE3ODAyMjc3",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3317802277"
         },
         {
@@ -146,6 +147,7 @@
             "event": "closed",
             "id": 3320090602,
             "node_id": "MDExOkNsb3NlZEV2ZW50MzMyMDA5MDYwMg==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3320090602"
         }
     ],
@@ -158,6 +160,7 @@
     "milestone": null,
     "node_id": "MDU6SXNzdWU2MTQ4ODE1MTQ=",
     "number": 55,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "closed",
     "title": "Crypto and web security",

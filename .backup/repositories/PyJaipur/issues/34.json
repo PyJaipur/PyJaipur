@@ -81,6 +81,7 @@
                 "name": "help wanted"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDMyMzAxNTMxOTE=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3230153191"
         },
         {
@@ -114,6 +115,7 @@
                 "name": "website"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDMyMzAxNTMxOTI=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3230153192"
         },
         {
@@ -183,6 +185,7 @@
             "event": "assigned",
             "id": 3230153205,
             "node_id": "MDEzOkFzc2lnbmVkRXZlbnQzMjMwMTUzMjA1",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3230153205"
         },
         {
@@ -212,6 +215,7 @@
             "event": "closed",
             "id": 3236320426,
             "node_id": "MDExOkNsb3NlZEV2ZW50MzIzNjMyMDQyNg==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3236320426"
         }
     ],
@@ -243,6 +247,7 @@
     "milestone": null,
     "node_id": "MDU6SXNzdWU1OTk0MDc0NzQ=",
     "number": 34,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "closed",
     "title": "Activity list on pyjaipur website",

@@ -14,6 +14,7 @@
             "id": 632191618,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/80",
             "node_id": "MDEyOklzc3VlQ29tbWVudDYzMjE5MTYxOA==",
+            "performed_via_github_app": null,
             "updated_at": "2020-05-21T16:28:01Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/632191618",
             "user": {
@@ -45,6 +46,7 @@
             "id": 633220312,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/80",
             "node_id": "MDEyOklzc3VlQ29tbWVudDYzMzIyMDMxMg==",
+            "performed_via_github_app": null,
             "updated_at": "2020-05-24T11:58:45Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/633220312",
             "user": {
@@ -76,6 +78,7 @@
             "id": 633413497,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/80",
             "node_id": "MDEyOklzc3VlQ29tbWVudDYzMzQxMzQ5Nw==",
+            "performed_via_github_app": null,
             "updated_at": "2020-05-25T07:02:13Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/633413497",
             "user": {
@@ -107,6 +110,7 @@
             "id": 636491536,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/80",
             "node_id": "MDEyOklzc3VlQ29tbWVudDYzNjQ5MTUzNg==",
+            "performed_via_github_app": null,
             "updated_at": "2020-05-31T16:08:35Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/636491536",
             "user": {
@@ -162,6 +166,7 @@
             "event": "added_to_project",
             "id": 3361332418,
             "node_id": "MDE5OkFkZGVkVG9Qcm9qZWN0RXZlbnQzMzYxMzMyNDE4",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3361332418"
         },
         {
@@ -195,6 +200,7 @@
                 "name": "on hold"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDMzNjkwNjA2OTA=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3369060690"
         }
     ],
@@ -217,6 +223,7 @@
     "milestone": null,
     "node_id": "MDU6SXNzdWU2MjI2MTM0MDI=",
     "number": 80,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "open",
     "title": "How to manage topics in to group? Should we use a different platform?",

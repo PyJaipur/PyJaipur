@@ -14,6 +14,7 @@
             "id": 427674465,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/3",
             "node_id": "MDEyOklzc3VlQ29tbWVudDQyNzY3NDQ2NQ==",
+            "performed_via_github_app": null,
             "updated_at": "2018-10-07T18:15:04Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/427674465",
             "user": {
@@ -69,6 +70,7 @@
             "event": "closed",
             "id": 1903232007,
             "node_id": "MDExOkNsb3NlZEV2ZW50MTkwMzIzMjAwNw==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/1903232007"
         }
     ],
@@ -81,6 +83,7 @@
     "milestone": null,
     "node_id": "MDU6SXNzdWUzNjc1Nzg3ODI=",
     "number": 3,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "closed",
     "title": "Proposal to talk on 13 Oct. Use case of data visualization  ",

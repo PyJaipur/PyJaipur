@@ -41,6 +41,7 @@
                 "name": "Talks"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDI5MzAwMDQzNDc=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2930004347"
         },
         {
@@ -74,6 +75,7 @@
                 "name": "upcoming"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDI5MzAwMDQzNDk=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2930004349"
         },
         {
@@ -106,6 +108,7 @@
                 "title": "Jan Meetup"
             },
             "node_id": "MDE1Ok1pbGVzdG9uZWRFdmVudDI5MzAxNDQwNTk=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2930144059"
         },
         {
@@ -135,6 +138,7 @@
             "event": "closed",
             "id": 2979668855,
             "node_id": "MDExOkNsb3NlZEV2ZW50Mjk3OTY2ODg1NQ==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/2979668855"
         },
         {
@@ -164,6 +168,7 @@
             "event": "added_to_project",
             "id": 3319347581,
             "node_id": "MDE5OkFkZGVkVG9Qcm9qZWN0RXZlbnQzMzE5MzQ3NTgx",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3319347581"
         },
         {
@@ -193,6 +198,7 @@
             "event": "moved_columns_in_project",
             "id": 3319348215,
             "node_id": "MDI2Ok1vdmVkQ29sdW1uc0luUHJvamVjdEV2ZW50MzMxOTM0ODIxNQ==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3319348215"
         }
     ],
@@ -251,6 +257,7 @@
     },
     "node_id": "MDU6SXNzdWU1NDY2NjcwMDA=",
     "number": 13,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "closed",
     "title": "The many uses of SSH",

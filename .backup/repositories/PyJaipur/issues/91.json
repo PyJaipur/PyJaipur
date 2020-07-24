@@ -14,6 +14,7 @@
             "id": 640242119,
             "issue_url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/91",
             "node_id": "MDEyOklzc3VlQ29tbWVudDY0MDI0MjExOQ==",
+            "performed_via_github_app": null,
             "updated_at": "2020-06-07T16:13:22Z",
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/comments/640242119",
             "user": {
@@ -73,6 +74,7 @@
                 "name": "60+min"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDMzOTA2ODg4NDg=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3390688848"
         },
         {
@@ -106,6 +108,7 @@
                 "name": "intermediate"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDMzOTA2ODkyMjQ=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3390689224"
         },
         {
@@ -139,6 +142,7 @@
                 "name": "Talk"
             },
             "node_id": "MDEyOkxhYmVsZWRFdmVudDMzOTA2ODkyMjU=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3390689225"
         },
         {
@@ -168,6 +172,7 @@
             "event": "added_to_project",
             "id": 3390689295,
             "node_id": "MDE5OkFkZGVkVG9Qcm9qZWN0RXZlbnQzMzkwNjg5Mjk1",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3390689295"
         },
         {
@@ -197,6 +202,7 @@
             "event": "mentioned",
             "id": 3416762692,
             "node_id": "MDE0Ok1lbnRpb25lZEV2ZW50MzQxNjc2MjY5Mg==",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3416762692"
         },
         {
@@ -226,6 +232,7 @@
             "event": "subscribed",
             "id": 3416762693,
             "node_id": "MDE1OlN1YnNjcmliZWRFdmVudDM0MTY3NjI2OTM=",
+            "performed_via_github_app": null,
             "url": "https://api.github.com/repos/PyJaipur/PyJaipur/issues/events/3416762693"
         }
     ],
@@ -266,6 +273,7 @@
     "milestone": null,
     "node_id": "MDU6SXNzdWU2Mjc5MDA5MTY=",
     "number": 91,
+    "performed_via_github_app": null,
     "repository_url": "https://api.github.com/repos/PyJaipur/PyJaipur",
     "state": "open",
     "title": "Deploying a highly scalable website/service that never goes down.",
