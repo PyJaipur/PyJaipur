@@ -2,6 +2,14 @@ baseurl: ''
 plugins:
     in_future: 'plugins.in_future'
 events:
+    - title: "July meetup"
+      start: '25 July 2020 11:00:00 GMT+5:30'
+      badges:
+          - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=NnRjdDJ0NjFjaXQwN2k2MjlsMm1sa25zdmlfMjAyMDA3MjVUMDUwMDAwWiBweWphaXB1ci5pbmRpYUBt&tmsrc=pyjaipur.india%40gmail.com&scp=ALL'
+            text: 'Add to calendar'
+          - href: 'https://meet.google.com/jyd-gbuj-vhy'
+            text: 'Call'
+      desc: "This month we're having discussions and code session on how to deploy ML models and GPT-3!"
     - title: "Community call"
       start: '26 July 2020 21:00:00 GMT+5:30'
       badges:
