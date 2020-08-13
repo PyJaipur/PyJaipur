@@ -1,0 +1,32 @@
+name: Community calls
+on:
+  schedule:
+      - cron:  '0 6 * * 0' # Sunday 23:30 hrs IST is 06:00 UTC
+  repository_dispatch:
+      types: manual-trigger
+
+
+jobs:
+  newCall:
+    name: Setup new community call
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@master
+          with:
+              persist-credentials: false
+              fetch-depth: 0
+        - name: updateCall
+          id: updateCall
+          run: |
+              python3 -m pip install -r requirements.txt
+              python3 manage.py new_community_call
+        - name: Commit files
+          run: |
+              git config --local user.email "action@github.com"
+              git config --local user.name "Github action"
+              git commit -m "manage.py: new_community_call" -a
+        - name: Push changes
+          uses: ad-m/github-push-action@master
+          with:
+              github_token: ${{ secrets.MY_GITHUB_TOKEN }}
+
