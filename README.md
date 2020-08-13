@@ -67,3 +67,19 @@ Changes to this repo are done as follows:
 
 - In case github goes offline, we maintain a backup of all our issues in this repo
 - `github-backup -o .backup  --issues --issue-comments --issue-events --pulls --pull-comments --pull-details --labels --milestones  -R PyJaipur PyJaipur -t <PERSONAL_ACCESS_TOKEN>`
+
+
+## Community calls
+
+- Community calls are every sunday 9 PM
+- Github actions creates calendar events/ updates the website/ creates github issues etc automatically.
+- To trigger manually:
+
+```
+ curl
+ -H "Accept: application/vnd.github.everest-preview+json"
+ -H "Authorization: token <token>"
+ --request POST
+ --data '{"event_type": "manual-trigger"}'
+ https://api.github.com/repos/PyJaipur/PyJaipur/dispatches
+ ```

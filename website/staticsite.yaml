@@ -1,103 +1,104 @@
 baseurl: ''
-plugins:
-    in_future: 'plugins.in_future'
 events:
-    - title: "Community call"
-      start: '02 August 2020 21:00:00 GMT+5:30'
-      badges:
-          - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=MHZrMThlb29xOTRnZWM5ZWZwajhrYzk5ZHIgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
-            text: 'Add to calendar'
-          - href: 'https://meet.google.com/tue-bqyd-wtj'
-            text: 'Call'
-      desc: "We're having a community call this sunday at 9 pm! Come join the community!"
-    - title: "July meetup"
-      start: '25 July 2020 11:00:00 GMT+5:30'
-      badges:
-          - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=NnRjdDJ0NjFjaXQwN2k2MjlsMm1sa25zdmlfMjAyMDA3MjVUMDUwMDAwWiBweWphaXB1ci5pbmRpYUBt&tmsrc=pyjaipur.india%40gmail.com&scp=ALL'
-            text: 'Add to calendar'
-          - href: 'https://meet.google.com/jyd-gbuj-vhy'
-            text: 'Call'
-      desc: "This month we're having discussions and code session on how to deploy ML models and GPT-3!"
-    - title: "Community call"
-      start: '26 July 2020 21:00:00 GMT+5:30'
-      badges:
-          - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=NnEwZHVvanJxaWtwOGNwbmxpczBuZG12OXQgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
-            text: 'Add to calendar'
-          - href: 'https://meet.google.com/qir-jyrv-apj'
-            text: 'Call'
-      desc: "We're having a community call this sunday at 9 pm! Come join the community!"
-    - title: "Community call"
-      start: '19 July 2020 21:00:00 GMT+5:30'
-      badges:
-          - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=MmNkMjlubHFoODZtNmt0b25hbGlnaTZrYjIgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
-            text: 'Add to calendar'
-          - href: 'https://meet.google.com/kzq-opsy-pyh'
-            text: 'Call'
-      desc: "We're having a community call this sunday at 9 pm! Come join the community!"
-    - title: "Volunteer meet"
-      start: '12 July 2020 21:00:00 GMT+5:30'
-      badges:
-          - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=M2F0bWxkcGlzZmYwMGFkMzU5NDQ5Zjh0ZmMgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
-            text: 'Add to calendar'
-          - href: 'https://meet.google.com/mai-jnaq-yuw'
-            text: 'Call'
-      desc: "We're having a volunteer meetup this sunday at 9 pm! Come join the community!"
-    - title: "Volunteer meet"
-      start: '12 July 2020 21:00:00 GMT+5:30'
-      badges:
-          - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=M2F0bWxkcGlzZmYwMGFkMzU5NDQ5Zjh0ZmMgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
-            text: 'Add to calendar'
-          - href: 'https://meet.google.com/mai-jnaq-yuw'
-            text: 'Call'
-      desc: "We're having a volunteer meetup this sunday at 9 pm! Come join the community!"
-    - title: "Volunteer meet"
-      start: '05 July 2020 21:00:00 GMT+5:30'
-      badges:
-          - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=Nmp0bHV0aDBrZmdydGdnNjkydjkxbzlvNjUgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
-            text: 'Add to calendar'
-          - href: 'https://meet.google.com/fda-ttap-jmg'
-            text: 'Call'
-      desc: "We're having a volunteer meetup this sunday at 9 pm! Come join the community!"
-    - title: "June meetup"
-      start: '27 June 2020 11:00:00 GMT+5:30'
-      badges:
-        - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=NnRjdDJ0NjFjaXQwN2k2MjlsMm1sa25zdmlfMjAyMDA2MjdUMDUwMDAwWiBweWphaXB1ci5pbmRpYUBt&tmsrc=pyjaipur.india%40gmail.com'
-          text: 'Add to calendar'
-        - href: 'https://meet.google.com/jyd-gbuj-vhy'
-          text: 'Call'
-      desc: "Come attend our monthly meetup! We're talking about:
-        <ul>
-        <li><a href='https://github.com/PyJaipur/PyJaipur/issues/54'>Web automation with RPA</a></li>
-        <li><a href='https://github.com/PyJaipur/PyJaipur/issues/113'>Talking about APIs</a></li>
-        <ul>
-        "
-    - title: "<a href='https://www.linuxdelhi.org/'>ILUG-D</a> ⥊ PyJaipur collab"
-      start: '28 June 2020 16:30:00 GMT+5:30'
-      badges:
-        - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=MGwwbTdiOGxqNWsxaDQxdW1uaHM2c3N2NmQgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
-          text: 'Add to calendar'
-        - href: 'https://www.linuxdelhi.org/'
-          text: 'ILUG-D website'
-          br_after: true
-        - href: 'https://www.youtube.com/watch?v=X6xlcdbEM04'
-          text: 'Live stream'
-      desc: "
-      We're having a collab event with 
-      <a href='https://www.linuxdelhi.org/'>
-      <img src='/images/assets/ilugd-50px.png' width='50px' alt='ilugd logo'></a>. Come participate in discussions on these two amazing topics!
-      <ul>
-        <li><a href='https://github.com/PyJaipur/PyJaipur/issues/101'>
-            Linux partitioning and LVM</a></li>
-        <li><a href='https://github.com/ILUGD/talks/issues/176'>
-            Intro to Jetpack Compose</a></li>
-  
-      </ul>
-      "
-    - title: Volunteer meetup
-      start: '21 June 2020 21:00:00 GMT+5:30'
-      badges:
-          - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=MGlqaWgxdjk2Zm9lNDloMWtpMGxpcWhoaHMgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
-            text: Add to calendar
-          - href: 'https://meet.google.com/juf-iyha-wrs'
-            text: Call
-      desc: "We're having a volunteer meetup this sunday at 9 pm! Come join the community!"
+- badges:
+  - href: https://github.com/PyJaipur/PyJaipur/issues/142
+    text: Github
+  desc: We're having a community call this sunday at 9 pm! Come join the community!
+  start: 20 August 2020 21:00:00 GMT+5:30
+  title: Community call
+- badges:
+  - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=MHZrMThlb29xOTRnZWM5ZWZwajhrYzk5ZHIgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
+    text: Add to calendar
+  - href: https://meet.google.com/tue-bqyd-wtj
+    text: Call
+  - href: https://github.com/PyJaipur/PyJaipur/issues/133
+    text: Github
+  desc: We're having a community call this sunday at 9 pm! Come join the community!
+  start: 02 August 2020 21:00:00 GMT+5:30
+  title: Community call
+- badges:
+  - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=NnRjdDJ0NjFjaXQwN2k2MjlsMm1sa25zdmlfMjAyMDA3MjVUMDUwMDAwWiBweWphaXB1ci5pbmRpYUBt&tmsrc=pyjaipur.india%40gmail.com&scp=ALL
+    text: Add to calendar
+  - href: https://meet.google.com/jyd-gbuj-vhy
+    text: Call
+  desc: This month we're having discussions and code session on how to deploy ML models
+    and GPT-3!
+  start: 25 July 2020 11:00:00 GMT+5:30
+  title: July meetup
+- badges:
+  - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=NnEwZHVvanJxaWtwOGNwbmxpczBuZG12OXQgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
+    text: Add to calendar
+  - href: https://meet.google.com/qir-jyrv-apj
+    text: Call
+  desc: We're having a community call this sunday at 9 pm! Come join the community!
+  start: 26 July 2020 21:00:00 GMT+5:30
+  title: Community call
+- badges:
+  - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=MmNkMjlubHFoODZtNmt0b25hbGlnaTZrYjIgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
+    text: Add to calendar
+  - href: https://meet.google.com/kzq-opsy-pyh
+    text: Call
+  desc: We're having a community call this sunday at 9 pm! Come join the community!
+  start: 19 July 2020 21:00:00 GMT+5:30
+  title: Community call
+- badges:
+  - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=M2F0bWxkcGlzZmYwMGFkMzU5NDQ5Zjh0ZmMgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
+    text: Add to calendar
+  - href: https://meet.google.com/mai-jnaq-yuw
+    text: Call
+  desc: We're having a volunteer meetup this sunday at 9 pm! Come join the community!
+  start: 12 July 2020 21:00:00 GMT+5:30
+  title: Volunteer meet
+- badges:
+  - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=M2F0bWxkcGlzZmYwMGFkMzU5NDQ5Zjh0ZmMgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
+    text: Add to calendar
+  - href: https://meet.google.com/mai-jnaq-yuw
+    text: Call
+  desc: We're having a volunteer meetup this sunday at 9 pm! Come join the community!
+  start: 12 July 2020 21:00:00 GMT+5:30
+  title: Volunteer meet
+- badges:
+  - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=Nmp0bHV0aDBrZmdydGdnNjkydjkxbzlvNjUgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
+    text: Add to calendar
+  - href: https://meet.google.com/fda-ttap-jmg
+    text: Call
+  desc: We're having a volunteer meetup this sunday at 9 pm! Come join the community!
+  start: 05 July 2020 21:00:00 GMT+5:30
+  title: Volunteer meet
+- badges:
+  - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=NnRjdDJ0NjFjaXQwN2k2MjlsMm1sa25zdmlfMjAyMDA2MjdUMDUwMDAwWiBweWphaXB1ci5pbmRpYUBt&tmsrc=pyjaipur.india%40gmail.com
+    text: Add to calendar
+  - href: https://meet.google.com/jyd-gbuj-vhy
+    text: Call
+  desc: 'Come attend our monthly meetup! We''re talking about: <ul> <li><a href=''https://github.com/PyJaipur/PyJaipur/issues/54''>Web
+    automation with RPA</a></li> <li><a href=''https://github.com/PyJaipur/PyJaipur/issues/113''>Talking
+    about APIs</a></li> <ul> '
+  start: 27 June 2020 11:00:00 GMT+5:30
+  title: June meetup
+- badges:
+  - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=MGwwbTdiOGxqNWsxaDQxdW1uaHM2c3N2NmQgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
+    text: Add to calendar
+  - br_after: true
+    href: https://www.linuxdelhi.org/
+    text: ILUG-D website
+  - href: https://www.youtube.com/watch?v=X6xlcdbEM04
+    text: Live stream
+  desc: ' We''re having a collab event with <a href=''https://www.linuxdelhi.org/''>
+    <img src=''/images/assets/ilugd-50px.png'' width=''50px'' alt=''ilugd logo''></a>.
+    Come participate in discussions on these two amazing topics! <ul> <li><a href=''https://github.com/PyJaipur/PyJaipur/issues/101''>
+    Linux partitioning and LVM</a></li> <li><a href=''https://github.com/ILUGD/talks/issues/176''>
+    Intro to Jetpack Compose</a></li>
+
+    </ul> '
+  start: 28 June 2020 16:30:00 GMT+5:30
+  title: "<a href='https://www.linuxdelhi.org/'>ILUG-D</a> \u294A PyJaipur collab"
+- badges:
+  - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=MGlqaWgxdjk2Zm9lNDloMWtpMGxpcWhoaHMgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
+    text: Add to calendar
+  - href: https://meet.google.com/juf-iyha-wrs
+    text: Call
+  desc: We're having a volunteer meetup this sunday at 9 pm! Come join the community!
+  start: 21 June 2020 21:00:00 GMT+5:30
+  title: Volunteer meetup
+plugins:
+  in_future: plugins.in_future
