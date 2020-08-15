@@ -3,8 +3,12 @@ events:
 - badges:
   - href: https://github.com/PyJaipur/PyJaipur/issues/142
     text: Github
+  - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=NHJxaDlmaDVkdm1scWdydjJ0ZTN1b2k5N3YgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
+    text: Add to calendar
+  - href: https://meet.google.com/pnh-rrpr-kcz
+    text: Call
   desc: We're having a community call this sunday at 9 pm! Come join the community!
-  start: 20 August 2020 21:00:00 GMT+5:30
+  start: 16 August 2020 21:00:00 GMT+5:30
   title: Community call
 - badges:
   - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=MHZrMThlb29xOTRnZWM5ZWZwajhrYzk5ZHIgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
