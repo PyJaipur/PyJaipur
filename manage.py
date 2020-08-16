@@ -22,7 +22,7 @@ def move_old_event_to_logs():
         for line in fl.readlines():
             if "|" in line and not done:
                 final.append(
-                    f"""      ('{d} {m} {y}| Community call', '{github_issue}'),\n"""
+                    f"""      ('{d} {m} {y} | Community call', '{github_issue}'),\n"""
                 )
                 done = True
             if final and final[-1] == line:
