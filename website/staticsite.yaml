@@ -2,9 +2,9 @@ baseurl: ''
 events:
 - badges:
     - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=dWNqcDVwYXRkc2phMXFhdG9ubjU3OThnaDlfMjAyMDA4MjJUMDUzMDAwWiBweWphaXB1ci5pbmRpYUBt&tmsrc=pyjaipur.india%40gmail.com'
-    text: Add to calendar
-- href: 'https://meet.google.com/jyd-gbuj-vhy'
-    text: Call
+      text: Add to calendar
+    - href: 'https://meet.google.com/jyd-gbuj-vhy'
+      text: Call
   desc: This month we're having a live coding session and a discussion on how to get better jobs for the community! Come join the call!
   start: 22 August 2020 11:00:00 GMT+5:30
   title: August meetup
