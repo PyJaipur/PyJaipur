@@ -1,6 +1,16 @@
 baseurl: ''
 events:
 - badges:
+    - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=MDZoZzAyZTRiOTB2OHZrZDQyNGFpa2pwY3MgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
+      text: Add to calendar
+    - href: 'https://meet.google.com/ecf-eubt-bor'
+      text: Call
+    - href: 'https://github.com/PyJaipur/PyJaipur/issues/149'
+      text: Github
+  desc: Community call
+  start: 6 September 2020 11:00:00 GMT+5:30
+  title: Community call
+- badges:
     - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=dWNqcDVwYXRkc2phMXFhdG9ubjU3OThnaDlfMjAyMDA4MjJUMDUzMDAwWiBweWphaXB1ci5pbmRpYUBt&tmsrc=pyjaipur.india%40gmail.com'
       text: Add to calendar
     - href: 'https://meet.google.com/jyd-gbuj-vhy'
