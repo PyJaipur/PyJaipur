@@ -3,13 +3,13 @@ events:
 - badges:
   - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=NWk1NXEzdjg2Z2dlZWVzNGMwYTZrM3IxazUgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
     text: Add to calendar
-  - href: 'https://meet.google.com/tqc-yjap-aaw'
-    text: Call
-  - href: https://github.com/PyJaipur/PyJaipur/issues/153
+  - href: 'https://youtu.be/ovdP-Bjw1AI'
+    text: Live stream
+  - href: https://github.com/PyJaipur/PyJaipur/issues/151
     text: Github
-  desc: We're having a community call this sunday at 9 pm! Come join the community!
+  desc: '<img src="/images/assets/sep13poster.jpg" width="100%">'
   start: 13 September 2020 21:00:00 GMT+5:30
-  title: Community call
+  title: Python workloads in Azure
 - badges:
   - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=MDZoZzAyZTRiOTB2OHZrZDQyNGFpa2pwY3MgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
     text: Add to calendar
