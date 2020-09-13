@@ -3,8 +3,8 @@ events:
 - badges:
   - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=NWk1NXEzdjg2Z2dlZWVzNGMwYTZrM3IxazUgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
     text: Add to calendar
-  - href: 'https://youtu.be/ovdP-Bjw1AI'
-    text: Live stream
+  - href: 'https://meet.jit.si/pyjaipur13sept'
+    text: Call
   - href: https://github.com/PyJaipur/PyJaipur/issues/151
     text: Github
   desc: '<img src="/images/assets/sep13poster.jpg" width="100%">'
