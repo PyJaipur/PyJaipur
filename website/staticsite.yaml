@@ -1,6 +1,16 @@
 baseurl: ''
 events:
 - badges:
+    - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=MmliOW9uY29nNjRzbzM1MTllbGV1Zm52YWcgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
+    text: Add to calendar
+- href: https://meet.google.com/qvm-zszb-tjh
+    text: Call
+  - href: https://github.com/PyJaipur/PyJaipur/issues/158
+    text: Github
+  desc: We're having a community call this sunday at 9 pm! Come join the community!
+  start: 20 September 2020 21:00:00 GMT+5:30
+  title: Community call
+- badges:
   - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=NWk1NXEzdjg2Z2dlZWVzNGMwYTZrM3IxazUgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
     text: Add to calendar
   - href: 'https://meet.jit.si/pyjaipur13sept'
