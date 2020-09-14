@@ -1,9 +1,9 @@
 baseurl: ''
 events:
 - badges:
-    - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=MmliOW9uY29nNjRzbzM1MTllbGV1Zm52YWcgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
+  - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=MmliOW9uY29nNjRzbzM1MTllbGV1Zm52YWcgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
     text: Add to calendar
-- href: https://meet.google.com/qvm-zszb-tjh
+  - href: https://meet.google.com/qvm-zszb-tjh
     text: Call
   - href: https://github.com/PyJaipur/PyJaipur/issues/158
     text: Github
