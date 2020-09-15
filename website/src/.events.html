@@ -80,7 +80,7 @@
       final_order.push({node: alerts[i].cloneNode(true), start_time: t});
       alerts[i].parentNode.removeChild(alerts[i]);
     }
-    final_order.sort(function (a, b) { return b.start_time - a.start_time})
+    final_order.sort(function (a, b) { return a.start_time - b.start_time})
     var alert_stream = document.querySelector('.alertstream');
     for (var i = 0; i < alerts.length; ++i){
       alert_stream.appendChild(final_order[i].node);
