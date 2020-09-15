@@ -1,6 +1,25 @@
 baseurl: ''
 events:
 - badges:
+  - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=Mm5wY2g1aWNrNGpvZThtc201ZXVjY2h2OGUgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
+    text: Add to calendar
+  - href: https://www.airmeet.com/e/558a2ea0-f713-11ea-9387-3373ec510970
+    text: Airmeet
+  - href: https://github.com/PyJaipur/PyJaipur/issues/160
+    text: Github
+  desc: "<img src='/images/assets/sept19poster.jpg' width='100%'>
+<ul>
+<li><a href='https://www.airmeet.com/e/558a2ea0-f713-11ea-9387-3373ec510970'>SOLID Principles</a></li>
+<li><a href='https://pad.riseup.net/p/string_theory__bytes_vs_strings'>String Theory: Bytes vs Strings</a></li>
+<li><a href='https://in.pycon.org/cfp/2020/proposals/the-website-story~dyZRe/'>The website story</a></li>
+<li><a href='https://www.airmeet.com/e/558a2ea0-f713-11ea-9387-3373ec510970'>The Twelve Factor Snake</a></li>
+<li><a href='https://github.com/pydelhi/talks/issues/191'>Documenting your next Python Project</a></li>
+<li><a href='https://github.com/pythonpune/meetup-talks/issues/112'>How I submitted my first Core Python patch</a></li>
+</ul>
+  "
+  start: 19 September 2020 10:00:00 GMT+5:30
+  title: Pycon India Flames
+- badges:
   - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=MmliOW9uY29nNjRzbzM1MTllbGV1Zm52YWcgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
     text: Add to calendar
   - href: https://meet.google.com/qvm-zszb-tjh
