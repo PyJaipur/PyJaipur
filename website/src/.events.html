@@ -15,7 +15,7 @@
   <!-- announce-new-event-after-this -->
 
   {% for event in events %}
-    {% if show_all or plugins.in_future(event.start) %}
+    {% if show_all or plugins.in_future(event.start, event.force) %}
       <div class='alert'>
         <strong>{{ event.title }}</strong><br>
         <time>{{ event.start }}</time><br>
@@ -65,7 +65,6 @@
                   found_live_call = true;
                   window.location.href = href;
                 }
-              }
               }
             }
           }
