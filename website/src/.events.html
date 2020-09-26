@@ -56,7 +56,7 @@
             var links=alerts[i].getElementsByTagName('a');
             for (var k=0; k< links.length; ++k){
               var href = links[k].getAttribute('href');
-              if ((href.indexOf('meet.jit.si') > -1) || (href.indexOf('meet.google.com') > -1) || (href.indexOf('youtube.com') > -1) || (href.indexOf('airmeet.com') > -1)){
+              if ((href.indexOf('meet.jit.si') > -1) || (href.indexOf('meet.google.com') > -1) || (href.indexOf('youtube.com') > -1) || (href.indexOf('airmeet.com') > -1 || (href.indexOf('jitsi.pyjaipur.org') > -1))){
                 found_live_call = true;
                 window.location.href = href;
               }
