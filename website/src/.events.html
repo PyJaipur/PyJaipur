@@ -43,8 +43,12 @@
     var hours = 60 * 60 * 1000;
     var redirect_to_call = false;
     var found_live_call = false;
-    if ((window.location.href.indexOf('#call') > -1) || (window.location.href.indexOf('#live') > -1)){
-      redirect_to_call = true;
+    var allowed = ['meet.jit.si', 'meet.google.com', 'youtube.com', 'airmeet.com', 'jitsi.pyjaipur.org'];
+    var tags = ['#live', '#call', '#event'];
+    for(var q=0; q<tags.length; ++q){
+      if (window.location.href.indexOf(tags[q]) > -1){
+        redirect_to_call = true;
+      }
     }
     for (var i = 0; i < alerts.length; ++i){
       var t = alerts[i].querySelector('time');
@@ -56,9 +60,12 @@
             var links=alerts[i].getElementsByTagName('a');
             for (var k=0; k< links.length; ++k){
               var href = links[k].getAttribute('href');
-              if ((href.indexOf('meet.jit.si') > -1) || (href.indexOf('meet.google.com') > -1) || (href.indexOf('youtube.com') > -1) || (href.indexOf('airmeet.com') > -1 || (href.indexOf('jitsi.pyjaipur.org') > -1))){
-                found_live_call = true;
-                window.location.href = href;
+              for( var q=0; q < allowed.length; ++q){
+                if (href.indexOf(allowed[q]) > -1){
+                  found_live_call = true;
+                  window.location.href = href;
+                }
+              }
               }
             }
           }
