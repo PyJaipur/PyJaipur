@@ -1,6 +1,25 @@
 baseurl: ''
 events:
 - badges:
+  - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=MHRjNzZjcmNrZTliODY0cWk0aGJvcHNscnIgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
+    text: Add to calendar
+  - href: https://meet.google.com/nxk-opbb-xzr
+    text: Call
+  desc: We're having a community call this sunday at 9 pm! Come join the community!
+  start: 04 October 2020 21:00:00 GMT+5:30
+  title: Community call
+  force: True
+events:
+- badges:
+  - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=M3Bybjluc3ZobWlqb2tpZzFsZmZyczVmZTggcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com
+    text: Add to calendar
+  - href: https://meet.google.com/hva-xucv-tir
+    text: Call
+  desc: We're having a community call this sunday at 9 pm! Come join the community!
+  start: 27 September 2020 21:00:00 GMT+5:30
+  title: Community call
+events:
+- badges:
   - href: https://calendar.google.com/event?action=TEMPLATE&tmeid=dWNqcDVwYXRkc2phMXFhdG9ubjU3OThnaDlfMjAyMDA5MjZUMDUzMDAwWiBweWphaXB1ci5pbmRpYUBt&tmsrc=pyjaipur.india%40gmail.com
     text: Add to calendar
   - href: https://jitsi.pyjaipur.org/SeptMeetup
@@ -8,7 +27,6 @@ events:
   desc: 'Come attend our monthly meetup! We are hosting a show-and-tell open to anyone who wants to attend!'
   start: 26 September 2020 11:00:00 GMT+5:30
   title: September meetup
-  force: True
 - badges:
   - href: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=Mm5wY2g1aWNrNGpvZThtc201ZXVjY2h2OGUgcHlqYWlwdXIuaW5kaWFAbQ&tmsrc=pyjaipur.india%40gmail.com'
     text: Add to calendar
